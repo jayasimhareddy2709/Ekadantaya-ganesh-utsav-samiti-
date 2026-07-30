@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+          <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,15 +25,25 @@
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div class="bg-orange-50 p-4 rounded-xl border border-orange-100 flex items-center gap-4">
                     <div class="p-3 bg-orange-500 text-white rounded-lg text-xl"><i class="fa-solid fa-om"></i></div>
-                    <div><p class="text-xs text-gray-500 font-semibold uppercase">Ganesh Idol</p><p class="font-bold text-gray-800 text-lg">Generously Donated</p></div>
+                    <div>
+                        <p class="text-xs text-gray-500 font-semibold uppercase">Ganesh Idol Donated By</p>
+                        <p class="font-bold text-gray-800 text-sm md:text-base">Utti Chandra Sekhar & Family</p>
+                    </div>
                 </div>
                 <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 flex items-center gap-4">
                     <div class="p-3 bg-amber-500 text-white rounded-lg text-xl"><i class="fa-solid fa-utensils"></i></div>
-                    <div><p class="text-xs text-gray-500 font-semibold uppercase">Annadanam</p><p class="font-bold text-gray-800 text-lg">Generously Donated</p></div>
+                    <div>
+                        <p class="text-xs text-gray-500 font-semibold uppercase">Annadanam Donated By</p>
+                        <p class="font-bold text-gray-800 text-xs md:text-sm">S.Praveen Dinakar & Family</p>
+                        <p class="font-bold text-gray-800 text-xs md:text-sm mt-0.5">P.Rajasekhar & Family</p>
+                    </div>
                 </div>
                 <div class="bg-yellow-50 p-4 rounded-xl border border-yellow-100 flex items-center gap-4">
                     <div class="p-3 bg-yellow-500 text-white rounded-lg text-xl"><i class="fa-solid fa-volume-high"></i></div>
-                    <div><p class="text-xs text-gray-500 font-semibold uppercase">Sound System/Speakers</p><p class="font-bold text-gray-800 text-lg">Generously Donated</p></div>
+                    <div>
+                        <p class="text-xs text-gray-500 font-semibold uppercase">Sound System/Speakers</p>
+                        <p class="font-bold text-gray-800 text-lg">Generously Donated</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -116,7 +126,7 @@
         // ==========================================
         const donations = [
             // Example format: { name: "Ramesh Kumar", amount: 501 },
-            // Add your live donations below this line:
+            // Add your live cash donations below this line:
 
         ];
 
@@ -167,7 +177,6 @@
             Object.keys(budgetLimits).forEach(cat => {
                 const limit = budgetLimits[cat];
                 const spent = categorySpent[cat];
-                const pct = (spent / limit) * 100;
                 let statusBadge = `<span class="px-2 py-0.5 rounded text-xs bg-gray-100 text-gray-600 font-medium">Safe</span>`;
                 if(spent > limit) statusBadge = `<span class="px-2 py-0.5 rounded text-xs bg-red-100 text-red-600 font-bold">Over Budget</span>`;
                 else if (spent === limit && limit > 0) statusBadge = `<span class="px-2 py-0.5 rounded text-xs bg-amber-100 text-amber-700 font-medium">Maxed</span>`;
@@ -185,7 +194,7 @@
 
             // Render Collections
             const collLog = document.getElementById('collection-log');
-            collLog.innerHTML = donations.length === 0 ? '<p class="text-sm text-gray-400 italic text-center py-4">No collections recorded yet.</p>' : '';
+            collLog.innerHTML = donations.length === 0 ? '<p class="text-sm text-gray-400 italic text-center py-4">No cash collections recorded yet.</p>' : '';
             [...donations].reverse().forEach(d => {
                 collLog.innerHTML += `
                     <div class="flex justify-between items-center p-3 bg-emerald-50 border border-emerald-100 rounded-xl">
