@@ -60,15 +60,15 @@
                     </div>
                 </div>
 
-                <!-- Pandal Location Card with QR -->
+                <!-- Pandal Location Card with Fixed QR -->
                 <div class="bg-rose-50 p-4 rounded-xl border border-rose-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm">
                     <div class="bg-white p-2 rounded-lg shadow-inner border border-rose-100">
-                        <!-- Generates QR dynamically without hosting extra image files -->
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.google.com/?q=14.673843,77.608303" class="w-20 h-20 object-contain" alt="Location QR">
+                        <!-- Direct fixed Google Maps coordinate QR string -->
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fwww.google.com%2Fmaps%3Fq%3D14.673843%2C77.608303" class="w-20 h-20 object-contain" alt="Location QR">
                     </div>
                     <div class="w-full">
                         <p class="text-[10px] text-rose-500 font-bold uppercase tracking-wider">Utsav Pandhal Venue</p>
-                        <a href="https://maps.google.com/?q=14.673843,77.608303" target="_blank" class="inline-flex items-center justify-center gap-1.5 mt-1.5 w-full bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold py-2 px-3 rounded-lg shadow transition-all">
+                        <a href="https://www.google.com/maps?q=14.673843,77.608303" target="_blank" class="inline-flex items-center justify-center gap-1.5 mt-1.5 w-full bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold py-2 px-3 rounded-lg shadow transition-all">
                             <i class="fa-solid fa-map-location-dot"></i> Open Maps Link
                         </a>
                     </div>
