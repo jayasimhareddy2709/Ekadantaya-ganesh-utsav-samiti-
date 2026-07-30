@@ -204,13 +204,13 @@
         <!-- SECURE ACCESS AREA -->
         <section class="max-w-6xl mx-auto pt-4">
             <div class="bg-black/20 border border-amber-500/20 rounded-3xl overflow-hidden">
-                <!-- Trigger area that prompts for Code Word -->
-                <div onclick="togglePrivateArea()" class="flex justify-between items-center p-5 cursor-pointer text-amber-500/40 select-none text-xs font-bold uppercase tracking-wider hover:text-amber-400 touch-manipulation">
+                <!-- Clean, predictable click handler built using a link structure -->
+                <a href="javascript:void(0);" onclick="togglePrivateArea(); return false;" class="flex justify-between items-center p-5 cursor-pointer text-amber-500/40 select-none text-xs font-bold uppercase tracking-wider hover:text-amber-400 touch-manipulation border-none outline-none">
                     <span class="flex items-center gap-2">
                         <i id="folder-icon" class="fa-solid fa-folder-closed"></i> Committee Area Logs
                     </span>
-                    <i id="chevron-icon" class="fa-solid fa-chevron-down"></i>
-                </div>
+                    <i id="chevron-icon" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                </a>
                 
                 <!-- Private Data Panels Inside -->
                 <div id="secure-content-box" class="hidden p-6 space-y-12 border-t border-amber-500/15">
@@ -259,6 +259,4 @@
                     </div>
 
                     <!-- Log Ledgers Columns -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div class="royal-card p-6 rounded-2xl">
-                                                               
+                    <div class="g                                    
