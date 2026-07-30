@@ -17,15 +17,15 @@
 
     <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
         
-        <!-- Grand Donations / Special Contributions -->
+        <!-- Grand Donations / Special Contributions & Location -->
         <section class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-orange-500">
             <h2 class="text-xl font-bold text-orange-600 mb-6 flex items-center gap-2">
-                <i class="fa-solid fa-hands-praying"></i> Pillars of the Utsav (Grand Contributions)
+                <i class="fa-solid fa-hands-praying"></i> Pillars & Venue of the Utsav
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
                 
                 <!-- Idol Donor Card -->
-                <div class="bg-orange-50 p-4 rounded-xl border border-orange-100 flex flex-col items-center text-center gap-3 shadow-sm">
+                <div class="bg-orange-50 p-4 rounded-xl border border-orange-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm">
                     <img src="45833.jpg" onerror="this.src='https://images.unsplash.com/photo-1609137144813-2d207ec4169c?w=150';" class="w-24 h-24 rounded-full object-cover border-2 border-orange-500 shadow-md" alt="Idol Donor">
                     <div>
                         <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Ganesh Idol Donor</p>
@@ -34,7 +34,7 @@
                 </div>
 
                 <!-- Annadanam Donor 1 Card -->
-                <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 flex flex-col items-center text-center gap-3 shadow-sm">
+                <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm">
                     <img src="45830.jpg" onerror="this.src='https://images.unsplash.com/photo-1561414927-6d86591d0c4f?w=150';" class="w-24 h-24 rounded-full object-cover border-2 border-amber-500 shadow-md" alt="Annadanam Donor">
                     <div>
                         <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Annadanam Donor</p>
@@ -43,7 +43,7 @@
                 </div>
 
                 <!-- Annadanam Donor 2 Card -->
-                <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 flex flex-col items-center text-center gap-3 shadow-sm">
+                <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm">
                     <img src="41149.jpg" onerror="this.src='https://images.unsplash.com/photo-1561414927-6d86591d0c4f?w=150';" class="w-24 h-24 rounded-full object-cover border-2 border-amber-500 shadow-md" alt="Annadanam Donor">
                     <div>
                         <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Annadanam Donor</p>
@@ -52,11 +52,25 @@
                 </div>
 
                 <!-- Speakers Card -->
-                <div class="bg-yellow-50 p-4 rounded-xl border border-yellow-100 flex flex-col items-center text-center justify-center gap-3 shadow-sm">
+                <div class="bg-yellow-50 p-4 rounded-xl border border-yellow-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm py-6">
                     <div class="w-16 h-16 bg-yellow-500 text-white rounded-full flex items-center justify-center text-2xl shadow-md"><i class="fa-solid fa-volume-high"></i></div>
                     <div>
                         <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Sound & Speakers</p>
                         <p class="font-bold text-gray-800 text-sm mt-1">Generously Donated</p>
+                    </div>
+                </div>
+
+                <!-- Pandal Location Card with QR -->
+                <div class="bg-rose-50 p-4 rounded-xl border border-rose-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm">
+                    <div class="bg-white p-2 rounded-lg shadow-inner border border-rose-100">
+                        <!-- Generates QR dynamically without hosting extra image files -->
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.google.com/?q=14.673843,77.608303" class="w-20 h-20 object-contain" alt="Location QR">
+                    </div>
+                    <div class="w-full">
+                        <p class="text-[10px] text-rose-500 font-bold uppercase tracking-wider">Utsav Pandhal Venue</p>
+                        <a href="https://maps.google.com/?q=14.673843,77.608303" target="_blank" class="inline-flex items-center justify-center gap-1.5 mt-1.5 w-full bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold py-2 px-3 rounded-lg shadow transition-all">
+                            <i class="fa-solid fa-map-location-dot"></i> Open Maps Link
+                        </a>
                     </div>
                 </div>
 
