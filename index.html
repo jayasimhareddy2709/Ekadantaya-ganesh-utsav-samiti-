@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -201,60 +201,82 @@
             </div>
         </section>
 
-        <!-- HTML Collapsible Dropdown Block (100% Reliable without Javascript fields) -->
-        <section class="max-w-6xl mx-auto pt-4">
-            <details class="group bg-black/20 border border-amber-500/20 rounded-3xl overflow-hidden transition-all duration-300">
-                <summary class="list-none flex justify-between items-center p-5 cursor-pointer text-amber-500/40 select-none text-xs font-bold uppercase tracking-wider hover:text-amber-400">
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-folder-closed group-open:hidden"></i><i class="fa-solid fa-folder-open hidden group-open:inline"></i> Committee Area Logs</span>
-                    <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
-                </summary>
-                
-                <div class="p-6 space-y-12 border-t border-amber-500/15">
-                    <!-- Budget Cards Layout -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="bg-gradient-to-br from-emerald-600 to-teal-950 text-white p-6 rounded-2xl border border-emerald-500/20">
-                            <p class="text-emerald-300 text-xs font-bold uppercase tracking-widest">Total Collections</p>
-                            <h3 class="text-3xl font-black mt-1.5 font-mono">₹45,500</h3>
-                            <p class="text-xs text-emerald-200/60 mt-2 font-medium">18 Donors contributed</p>
-                        </div>
-                        <div class="bg-gradient-to-br from-red-700 to-rose-950 text-white p-6 rounded-2xl border border-rose-500/20">
-                            <p class="text-rose-300 text-xs font-bold uppercase tracking-widest">Total Cash Expenses</p>
-                            <h3 class="text-3xl font-black mt-1.5 font-mono">₹38,200</h3>
-                            <p class="text-xs text-rose-200/60 mt-2 font-medium">Allocated Budget Limit: ₹60,000</p>
-                        </div>
-                        <div class="bg-gradient-to-br from-blue-600 to-indigo-950 text-white p-6 rounded-2xl border border-blue-500/20">
-                            <p class="text-blue-300 text-xs font-bold uppercase tracking-widest">Remaining Cash Balance</p>
-                            <h3 class="text-3xl font-black mt-1.5 font-mono">₹7,300</h3>
-                            <p class="text-xs text-blue-200/70 mt-2 font-medium">Collections minus Expenses</p>
-                        </div>
-                    </div>
+        <!-- SECURE ACCESS CONTAINER -->
+        <section class="max-w-xs mx-auto text-center pt-8">
+            <div id="pin-prompt-box" class="bg-black/40 p-4 rounded-2xl border border-amber-500/20 space-y-3">
+                <p class="text-xs font-bold text-amber-400"><i class="fa-solid fa-shield-halved mr-1"></i> Committee Access</p>
+                <div class="flex gap-2">
+                    <input type="password" id="bottomPinInput" placeholder="Enter security PIN" class="bg-black/60 border border-white/10 text-white rounded-xl px-3 py-1.5 text-xs font-bold w-full text-center outline-none focus:border-amber-400">
+                    
+                    <!-- Fixed mobile touch handler link element -->
+                    <a href="javascript:void(0);" onclick="checkBottomPin(); return false;" class="bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs px-4 py-2 rounded-xl transition-all inline-flex items-center justify-center cursor-pointer active:scale-95">Verify</a>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Budget Breakdown Matrix Table -->
-                    <div class="royal-card p-6 rounded-2xl">
-                        <h2 class="text-xl font-black text-amber-400 mb-6 flex items-center gap-3 border-b border-white/10 pb-4">
-                            <i class="fa-solid fa-chart-pie text-amber-500"></i> Budget Allocation & Spending Status
-                        </h2>
-                        <div class="overflow-x-auto">
-                            <table class="w-full text-left border-collapse text-sm">
-                                <thead>
-                                    <tr class="border-b border-white/10 text-amber-400/70 text-xs font-bold uppercase tracking-wider">
-                                        <th class="pb-4 font-bold">Category</th>
-                                        <th class="pb-4 font-bold text-right">Budget Limit</th>
-                                        <th class="pb-4 font-bold text-right">Actual Spent</th>
-                                        <th class="pb-4 font-bold text-right">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="divide-y divide-white/5">
-                                    <tr class="hover:bg-white/5"><td class="py-3.5 font-bold">Mandapam</td><td class="text-right font-mono">₹15,000</td><td class="text-right font-bold font-mono">₹14,500</td><td class="text-right"><span class="px-2 py-0.5 rounded text-xs bg-emerald-500/20 text-emerald-300">Active</span></td></tr>
-                                    <tr class="hover:bg-white/5"><td class="py-3.5 font-bold">Pooja</td><td class="text-right font-mono">₹20,000</td><td class="text-right font-bold font-mono">₹18,000</td><td class="text-right"><span class="px-2 py-0.5 rounded text-xs bg-emerald-500/20 text-emerald-300">Active</span></td></tr>
-                                    <tr class="hover:bg-white/5"><td class="py-3.5 font-bold">Lighting</td><td class="text-right font-mono">₹5,000</td><td class="text-right font-bold font-mono">₹4,200</td><td class="text-right"><span class="px-2 py-0.5 rounded text-xs bg-emerald-500/20 text-emerald-300">Active</span></td></tr>
-                                    <tr class="hover:bg-white/5"><td class="py-3.5 font-bold">Flex</td><td class="text-right font-mono">₹2,000</td><td class="text-right font-bold font-mono">₹1,500</td><td class="text-right"><span class="px-2 py-0.5 rounded text-xs bg-emerald-500/20 text-emerald-300">Active</span></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+        <!-- PRIVATE LEDGER MODULE -->
+        <div id="private-committee-panel" class="hidden space-y-12 pt-6 border-t border-amber-500/20">
+            <div class="text-center bg-emerald-500/10 border border-emerald-500/30 p-3 rounded-xl max-w-sm mx-auto">
+                <p class="text-emerald-400 text-xs font-bold"><i class="fa-solid fa-unlock-keyhole mr-1.5"></i> Private Committee Dashboard Active</p>
+            </div>
 
-                    <!-- Log Ledgers Columns -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div class="royal-card p-6 rounded-2xl">
-                            <h2 class="text-                                    
+            <!-- Budget Overview Cards -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-emerald-600 to-teal-950 text-white p-6 rounded-3xl border border-emerald-500/20">
+                    <p class="text-emerald-300 text-xs font-bold uppercase tracking-widest">Total Collections</p>
+                    <h3 class="text-3xl font-black mt-1.5" id="total-collections">₹0</h3>
+                    <p class="text-xs text-emerald-200/60 mt-2 font-medium" id="donation-count">0 Donors</p>
+                </div>
+                <div class="bg-gradient-to-br from-red-700 to-rose-950 text-white p-6 rounded-3xl border border-rose-500/20">
+                    <p class="text-rose-300 text-xs font-bold uppercase tracking-widest">Total Cash Expenses</p>
+                    <h3 class="text-3xl font-black mt-1.5" id="total-expenses">₹0</h3>
+                    <p class="text-xs text-rose-200/60 mt-2 font-medium">Budget limit: ₹60,000</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-600 to-indigo-950 text-white p-6 rounded-3xl border border-blue-500/20">
+                    <p class="text-blue-300 text-xs font-bold uppercase tracking-widest">Remaining Cash Balance</p>
+                    <h3 class="text-3xl font-black mt-1.5" id="net-balance">₹0</h3>
+                    <p class="text-xs text-blue-200/70 mt-2 font-medium">Balance Available</p>
+                </div>
+            </section>
+
+            <!-- Budget Breakdown Matrix -->
+            <section class="royal-card p-6 rounded-3xl">
+                <h2 class="text-xl font-black text-amber-400 mb-6 flex items-center gap-3 border-b border-white/10 pb-4">
+                    <i class="fa-solid fa-chart-pie text-amber-500"></i> Budget Allocation & Spending Status
+                </h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-white/10 text-amber-400/70 text-xs font-bold uppercase tracking-wider">
+                                <th class="pb-4 font-bold">Category</th>
+                                <th class="pb-4 font-bold text-right">Budget Limit</th>
+                                <th class="pb-4 font-bold text-right">Actual Spent</th>
+                                <th class="pb-4 font-bold text-right">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/5 text-sm" id="budget-matrix-body"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Logs Ledger Matrix -->
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="royal-card p-6 rounded-3xl">
+                    <h2 class="text-xl font-black text-emerald-400 mb-6 flex items-center gap-3 border-b border-white/10 pb-4">
+                        <i class="fa-solid fa-money-bill-trend-up text-emerald-500"></i> Collection Log (Donations)
+                    </h2>
+                    <div class="max-h-96 overflow-y-auto space-y-3.5 pr-2" id="collection-log"></div>
+                </div>
+                <div class="royal-card p-6 rounded-3xl">
+                    <h2 class="text-xl font-black text-red-400 mb-6 flex items-center gap-3 border-b border-white/10 pb-4">
+                        <i class="fa-solid fa-receipt text-red-500"></i> Cash Expenditure Log
+                    </h2>
+                    <div class="max-h-96 overflow-y-auto space-y-3.5 pr-2" id="expense-log"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center py-12 text-amber-500/30 text-xs font-semibold border-t border-white/5 tracking-wider relative z-10">
+        © 2026 Team Ekadantaya Ganesh Utsav Samiti. All portal rights reserved.
+                                                 
