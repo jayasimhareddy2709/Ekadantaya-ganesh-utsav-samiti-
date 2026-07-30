@@ -201,15 +201,19 @@
             </div>
         </section>
 
-        <!-- HTML Collapsible Dropdown Block (100% Reliable without Javascript fields) -->
+        <!-- SECURE ACCESS AREA -->
         <section class="max-w-6xl mx-auto pt-4">
-            <details class="group bg-black/20 border border-amber-500/20 rounded-3xl overflow-hidden transition-all duration-300">
-                <summary class="list-none flex justify-between items-center p-5 cursor-pointer text-amber-500/40 select-none text-xs font-bold uppercase tracking-wider hover:text-amber-400">
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-folder-closed group-open:hidden"></i><i class="fa-solid fa-folder-open hidden group-open:inline"></i> Committee Area Logs</span>
-                    <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180"></i>
-                </summary>
+            <div class="bg-black/20 border border-amber-500/20 rounded-3xl overflow-hidden">
+                <!-- Trigger area that prompts for Code Word -->
+                <div onclick="togglePrivateArea()" class="flex justify-between items-center p-5 cursor-pointer text-amber-500/40 select-none text-xs font-bold uppercase tracking-wider hover:text-amber-400 touch-manipulation">
+                    <span class="flex items-center gap-2">
+                        <i id="folder-icon" class="fa-solid fa-folder-closed"></i> Committee Area Logs
+                    </span>
+                    <i id="chevron-icon" class="fa-solid fa-chevron-down"></i>
+                </div>
                 
-                <div class="p-6 space-y-12 border-t border-amber-500/15">
+                <!-- Private Data Panels Inside -->
+                <div id="secure-content-box" class="hidden p-6 space-y-12 border-t border-amber-500/15">
                     <!-- Budget Cards Layout -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="bg-gradient-to-br from-emerald-600 to-teal-950 text-white p-6 rounded-2xl border border-emerald-500/20">
@@ -257,5 +261,4 @@
                     <!-- Log Ledgers Columns -->
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         <div class="royal-card p-6 rounded-2xl">
-                            <h2 class="text-
-                                                
+                                                               
