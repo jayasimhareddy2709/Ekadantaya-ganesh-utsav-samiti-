@@ -6,84 +6,95 @@
     <title>Team Ekadantaya Ganesh Utsav Samiti</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .royal-glow {
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.35);
+        }
+        .card-glow:hover {
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.5);
+            transform: translateY(-4px);
+        }
+    </style>
 </head>
-<body class="bg-amber-50 text-gray-800 font-sans">
+<body class="bg-gradient-to-b from-[#2d0b0f] via-[#1a0507] to-[#0f0203] text-gray-100 font-sans min-h-screen selection:bg-amber-500 selection:text-black">
 
-    <!-- Header with Updated Team Name and Location -->
-    <header class="bg-gradient-to-r from-orange-600 to-amber-500 text-white py-6 px-4 shadow-lg">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
-            <img src="logo.png" onerror="this.style.display='none';" class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-amber-300 shadow-md object-cover bg-white" alt="Ekadantaya Logo">
+    <!-- Header with Integrated Full-Circle Logo -->
+    <header class="bg-gradient-to-r from-[#5c0612] via-[#8c1c2b] to-[#5c0612] text-white py-8 px-4 shadow-2xl border-b border-amber-500/30 sticky top-0 z-50 backdrop-blur-md bg-opacity-95">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-5 text-center sm:text-left">
+            <img src="logo.png" onerror="this.style.display='none';" class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-amber-400 shadow-[0_0_20px_rgba(251,191,36,0.6)] object-cover bg-white" alt="Ekadantaya Logo">
             <div>
-                <h1 class="text-3xl md:text-5xl font-bold tracking-wide">Team Ekadantaya Ganesh Utsav Samiti</h1>
-                <p class="text-orange-100 mt-1 text-sm md:text-base font-medium tracking-wider">Bhagya Nagar 2nd Cross, Anantapur</p>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 dropped-shadow">Team Ekadantaya Ganesh Utsav Samiti</h1>
+                <p class="text-amber-400/90 mt-1 text-sm md:text-base font-semibold tracking-wider flex items-center justify-center sm:justify-start gap-2">
+                    <i class="fa-solid fa-location-dot text-rose-500 animate-pulse"></i> Bhagya Nagar 2nd Cross, Anantapur
+                </p>
             </div>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+    <main class="max-w-6xl mx-auto px-4 py-10 space-y-12">
         
         <!-- Grand Donations / Special Contributions & Location -->
-        <section class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-orange-500">
-            <h2 class="text-xl font-bold text-orange-600 mb-6 flex items-center gap-2">
-                <i class="fa-solid fa-hands-praying"></i> Pillars & Venue of the Utsav
+        <section class="bg-white/5 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-amber-500/20 royal-glow">
+            <h2 class="text-2xl font-black text-amber-400 mb-8 flex items-center gap-3 border-b border-amber-500/10 pb-4">
+                <i class="fa-solid fa-hands-praying text-xl"></i> Pillars & Venue of the Utsav
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 <!-- Idol Donor Card -->
-                <div class="bg-orange-50 p-4 rounded-xl border border-orange-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm">
-                    <img src="45833.jpg" onerror="this.src='https://images.unsplash.com/photo-1609137144813-2d207ec4169c?w=150';" class="w-24 h-24 rounded-full object-cover border-2 border-orange-500 shadow-md" alt="Idol Donor">
+                <div class="bg-gradient-to-b from-white/10 to-white/5 p-5 rounded-2xl border border-amber-500/10 flex flex-col items-center text-center justify-between gap-4 transition-all duration-300 card-glow group">
+                    <img src="45833.jpg" onerror="this.src='https://images.unsplash.com/photo-1609137144813-2d207ec4169c?w=150';" class="w-28 h-28 rounded-full object-cover border-4 border-amber-500/50 shadow-md group-hover:border-amber-400 transition-all" alt="Idol Donor">
                     <div>
-                        <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Ganesh Idol Donor</p>
-                        <p class="font-bold text-gray-800 text-sm mt-1">Chandra Sekhar Putta & Family</p>
+                        <p class="text-[11px] text-amber-400 font-bold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full">Ganesh Idol Donor</p>
+                        <p class="font-extrabold text-white text-base mt-2.5">Chandra Sekhar Putta & Family</p>
                     </div>
                 </div>
 
                 <!-- Annadanam Donor 1 Card -->
-                <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm">
-                    <img src="45830.jpg" onerror="this.src='https://images.unsplash.com/photo-1561414927-6d86591d0c4f?w=150';" class="w-24 h-24 rounded-full object-cover border-2 border-amber-500 shadow-md" alt="Annadanam Donor">
+                <div class="bg-gradient-to-b from-white/10 to-white/5 p-5 rounded-2xl border border-amber-500/10 flex flex-col items-center text-center justify-between gap-4 transition-all duration-300 card-glow group">
+                    <img src="45830.jpg" onerror="this.src='https://images.unsplash.com/photo-1561414927-6d86591d0c4f?w=150';" class="w-28 h-28 rounded-full object-cover border-4 border-amber-500/50 shadow-md group-hover:border-amber-400 transition-all" alt="Annadanam Donor">
                     <div>
-                        <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Annadanam Donor</p>
-                        <p class="font-bold text-gray-800 text-sm mt-1">S.Praveen Dinakar & Family</p>
+                        <p class="text-[11px] text-amber-400 font-bold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full">Annadanam Donor</p>
+                        <p class="font-extrabold text-white text-base mt-2.5">S.Praveen Dinakar & Family</p>
                     </div>
                 </div>
 
                 <!-- Annadanam Donor 2 Card -->
-                <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm">
-                    <img src="41149.jpg" onerror="this.src='https://images.unsplash.com/photo-1561414927-6d86591d0c4f?w=150';" class="w-24 h-24 rounded-full object-cover border-2 border-amber-500 shadow-md" alt="Annadanam Donor">
+                <div class="bg-gradient-to-b from-white/10 to-white/5 p-5 rounded-2xl border border-amber-500/10 flex flex-col items-center text-center justify-between gap-4 transition-all duration-300 card-glow group">
+                    <img src="41149.jpg" onerror="this.src='https://images.unsplash.com/photo-1561414927-6d86591d0c4f?w=150';" class="w-28 h-28 rounded-full object-cover border-4 border-amber-500/50 shadow-md group-hover:border-amber-400 transition-all" alt="Annadanam Donor">
                     <div>
-                        <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Annadanam Donor</p>
-                        <p class="font-bold text-gray-800 text-sm mt-1">P.Rajasekhar & Family</p>
+                        <p class="text-[11px] text-amber-400 font-bold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full">Annadanam Donor</p>
+                        <p class="font-extrabold text-white text-base mt-2.5">P.Rajasekhar & Family</p>
                     </div>
                 </div>
 
                 <!-- Speakers Family Donor Card -->
-                <div class="bg-yellow-50 p-4 rounded-xl border border-yellow-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm">
-                    <img src="speakers_donor.jpg" onerror="this.src='https://images.unsplash.com/photo-1545454675-3531b543be5d?w=150';" class="w-24 h-24 rounded-full object-cover border-2 border-yellow-500 shadow-md" alt="Speaker Donor">
+                <div class="bg-gradient-to-b from-white/10 to-white/5 p-5 rounded-2xl border border-amber-500/10 flex flex-col items-center text-center justify-between gap-4 transition-all duration-300 card-glow group">
+                    <img src="speakers_donor.jpg" onerror="this.src='https://images.unsplash.com/photo-1545454675-3531b543be5d?w=150';" class="w-28 h-28 rounded-full object-cover border-4 border-amber-500/50 shadow-md group-hover:border-amber-400 transition-all" alt="Speaker Donor">
                     <div>
-                        <p class="text-[10px] text-yellow-600 font-bold uppercase tracking-wider">Sound & Speaker Donor</p>
-                        <p class="font-bold text-gray-800 text-sm mt-1">Peddakadiri Adinarayana Reddy & Family</p>
+                        <p class="text-[11px] text-amber-400 font-bold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full">Sound & Speaker Donor</p>
+                        <p class="font-extrabold text-white text-base mt-2.5">Peddakadiri Adinarayana Reddy & Family</p>
                     </div>
                 </div>
 
                 <!-- Speakers Team Contribution Card -->
-                <div class="bg-yellow-50 p-4 rounded-xl border border-yellow-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm py-6">
-                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-amber-400 text-white rounded-full flex items-center justify-center text-3xl shadow-md">
+                <div class="bg-gradient-to-b from-white/10 to-white/5 p-5 rounded-2xl border border-amber-500/10 flex flex-col items-center text-center justify-between gap-4 transition-all duration-300 card-glow group py-6">
+                    <div class="w-24 h-24 bg-gradient-to-br from-amber-500 to-yellow-400 text-gray-950 rounded-full flex items-center justify-center text-4xl shadow-[0_0_15px_rgba(245,158,11,0.4)] font-bold border-2 border-amber-300">
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
                     <div>
-                        <p class="text-[10px] text-yellow-600 font-bold uppercase tracking-wider">Sound & Speaker</p>
-                        <p class="font-bold text-gray-800 text-sm mt-1">Contributed by Utsav Team</p>
+                        <p class="text-[11px] text-amber-400 font-bold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full">Sound & Speaker</p>
+                        <p class="font-extrabold text-white text-base mt-2.5">Contributed by Utsav Team</p>
                     </div>
                 </div>
 
                 <!-- Pandal Location Card -->
-                <div class="bg-rose-50 p-4 rounded-xl border border-rose-100 flex flex-col items-center text-center justify-between gap-3 shadow-sm">
-                    <div class="bg-white p-2 rounded-lg shadow-inner border border-rose-100">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fmaps.app.goo.gl%2FSktJHzcF9sFM3fve6" class="w-20 h-20 object-contain" alt="Location QR">
+                <div class="bg-gradient-to-b from-white/10 to-white/5 p-5 rounded-2xl border border-rose-500/20 flex flex-col items-center text-center justify-between gap-4 transition-all duration-300 card-glow">
+                    <div class="bg-white p-2.5 rounded-xl shadow-2xl border border-amber-400/40 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fmaps.app.goo.gl%2FSktJHzcF9sFM3fve6" class="w-20 h-20 object-contain rounded" alt="Location QR">
                     </div>
                     <div class="w-full">
-                        <p class="text-[10px] text-rose-500 font-bold uppercase tracking-wider">Utsav Pandhal Venue</p>
-                        <a href="https://maps.app.goo.gl/SktJHzcF9sFM3fve6" target="_blank" class="inline-flex items-center justify-center gap-1.5 mt-1.5 w-full bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold py-2 px-3 rounded-lg shadow transition-all">
+                        <p class="text-[11px] text-rose-400 font-bold uppercase tracking-widest bg-rose-500/10 px-3 py-1 rounded-full">Utsav Pandhal Venue</p>
+                        <a href="https://maps.app.goo.gl/SktJHzcF9sFM3fve6" target="_blank" class="inline-flex items-center justify-center gap-2 mt-3 w-full bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-500 hover:to-red-500 text-white text-xs font-bold py-2.5 px-4 rounded-xl shadow-lg transition-all border border-rose-400/20">
                             <i class="fa-solid fa-map-location-dot"></i> Open Maps Link
                         </a>
                     </div>
@@ -93,64 +104,64 @@
         </section>
 
         <!-- Utsav Event Schedule -->
-        <section class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-amber-500">
-            <h2 class="text-xl font-bold text-amber-700 mb-6 flex items-center gap-2">
-                <i class="fa-solid fa-calendar-days"></i> Utsav Event Schedule
+        <section class="bg-white/5 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-amber-500/20 royal-glow">
+            <h2 class="text-2xl font-black text-amber-400 mb-8 flex items-center gap-3 border-b border-amber-500/10 pb-4">
+                <i class="fa-solid fa-calendar-days text-xl"></i> Utsav Event Schedule
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
                 
                 <!-- Day 1 -->
-                <div class="bg-gradient-to-b from-orange-50 to-white p-4 rounded-xl border border-orange-100 flex flex-col justify-between shadow-sm">
+                <div class="bg-gradient-to-b from-white/10 to-transparent p-4 rounded-2xl border border-white/5 flex flex-col justify-between transition-all duration-300 hover:border-orange-500/30">
                     <div>
-                        <span class="bg-orange-600 text-white text-xs px-2.5 py-1 rounded-full font-bold">Day 1</span>
-                        <h4 class="font-bold text-gray-800 mt-2 text-base">14 September</h4>
-                        <div class="mt-3 space-y-2 text-sm text-gray-600">
-                            <p class="flex items-start gap-2"><i class="fa-solid fa-om text-orange-500 mt-1"></i> <span><strong>9:00 AM:</strong> Pooja Morning</span></p>
-                            <p class="flex items-start gap-2"><i class="fa-solid fa-film text-orange-500 mt-1"></i> <span><strong>9:00 PM:</strong> Movie Evening</span></p>
+                        <span class="bg-orange-600 text-white text-xs px-3 py-1 rounded-full font-black tracking-wider shadow">Day 1</span>
+                        <h4 class="font-extrabold text-white mt-3 text-lg">14 September</h4>
+                        <div class="mt-4 space-y-3 text-sm text-gray-300">
+                            <p class="flex items-start gap-2.5"><i class="fa-solid fa-om text-orange-400 mt-0.5 text-base"></i> <span><strong>9:00 AM:</strong> Pooja Morning</span></p>
+                            <p class="flex items-start gap-2.5"><i class="fa-solid fa-film text-orange-400 mt-0.5 text-base"></i> <span><strong>9:00 PM:</strong> Movie Evening</span></p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Day 2 -->
-                <div class="bg-gradient-to-b from-amber-50 to-white p-4 rounded-xl border border-amber-100 flex flex-col justify-between shadow-sm">
+                <div class="bg-gradient-to-b from-white/10 to-transparent p-4 rounded-2xl border border-white/5 flex flex-col justify-between transition-all duration-300 hover:border-amber-500/30">
                     <div>
-                        <span class="bg-amber-600 text-white text-xs px-2.5 py-1 rounded-full font-bold">Day 2</span>
-                        <h4 class="font-bold text-gray-800 mt-2 text-base">15 September</h4>
-                        <div class="mt-3 text-sm text-gray-600">
-                            <p class="flex items-start gap-2"><i class="fa-solid fa-gamepad text-amber-500 mt-1"></i> <span><strong>6:00 PM:</strong> Games Evening</span></p>
+                        <span class="bg-amber-600 text-white text-xs px-3 py-1 rounded-full font-black tracking-wider shadow">Day 2</span>
+                        <h4 class="font-extrabold text-white mt-3 text-lg">15 September</h4>
+                        <div class="mt-4 text-sm text-gray-300">
+                            <p class="flex items-start gap-2.5"><i class="fa-solid fa-gamepad text-amber-400 mt-0.5 text-base"></i> <span><strong>6:00 PM:</strong> Games Evening</span></p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Day 3 -->
-                <div class="bg-gradient-to-b from-yellow-50 to-white p-4 rounded-xl border border-yellow-100 flex flex-col justify-between shadow-sm">
+                <div class="bg-gradient-to-b from-white/10 to-transparent p-4 rounded-2xl border border-white/5 flex flex-col justify-between transition-all duration-300 hover:border-yellow-500/30">
                     <div>
-                        <span class="bg-yellow-600 text-gray-900 text-xs px-2.5 py-1 rounded-full font-bold">Day 3</span>
-                        <h4 class="font-bold text-gray-800 mt-2 text-base">16 September</h4>
-                        <div class="mt-3 text-sm text-gray-600">
-                            <p class="flex items-start gap-2"><i class="fa-solid fa-utensils text-yellow-600 mt-1"></i> <span><strong>7:00 PM onwards:</strong> Annadanam</span></p>
+                        <span class="bg-yellow-500 text-gray-950 text-xs px-3 py-1 rounded-full font-black tracking-wider shadow">Day 3</span>
+                        <h4 class="font-extrabold text-white mt-3 text-lg">16 September</h4>
+                        <div class="mt-4 text-sm text-gray-300">
+                            <p class="flex items-start gap-2.5"><i class="fa-solid fa-utensils text-yellow-400 mt-0.5 text-base"></i> <span><strong>7:00 PM onwards:</strong> Annadanam</span></p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Day 4 -->
-                <div class="bg-gradient-to-b from-red-500/5 to-white p-4 rounded-xl border border-red-100 flex flex-col justify-between shadow-sm">
+                <div class="bg-gradient-to-b from-white/10 to-transparent p-4 rounded-2xl border border-white/5 flex flex-col justify-between transition-all duration-300 hover:border-rose-500/30">
                     <div>
-                        <span class="bg-rose-600 text-white text-xs px-2.5 py-1 rounded-full font-bold">Day 4</span>
-                        <h4 class="font-bold text-gray-800 mt-2 text-base">17 September</h4>
-                        <div class="mt-3 text-sm text-gray-600">
-                            <p class="flex items-start gap-2"><i class="fa-solid fa-music text-rose-500 mt-1"></i> <span><strong>6:00 PM onwards:</strong> Dandiya & Dance Program</span></p>
+                        <span class="bg-rose-600 text-white text-xs px-3 py-1 rounded-full font-black tracking-wider shadow">Day 4</span>
+                        <h4 class="font-extrabold text-white mt-3 text-lg">17 September</h4>
+                        <div class="mt-4 text-sm text-gray-300">
+                            <p class="flex items-start gap-2.5"><i class="fa-solid fa-music text-rose-400 mt-0.5 text-base"></i> <span><strong>6:00 PM onwards:</strong> Dandiya & Dance Program</span></p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Day 5 -->
-                <div class="bg-gradient-to-b from-emerald-50 to-white p-4 rounded-xl border border-emerald-100 flex flex-col justify-between shadow-sm">
+                <div class="bg-gradient-to-b from-white/10 to-transparent p-4 rounded-2xl border border-white/5 flex flex-col justify-between transition-all duration-300 hover:border-emerald-500/30">
                     <div>
-                        <span class="bg-emerald-600 text-white text-xs px-2.5 py-1 rounded-full font-bold">Day 5</span>
-                        <h4 class="font-bold text-gray-800 mt-2 text-base">18 September</h4>
-                        <div class="mt-3 text-sm text-gray-600">
-                            <p class="flex items-start gap-2"><i class="fa-solid fa-gavel text-emerald-600 mt-1"></i> <span><strong>3:00 PM onwards:</strong> Laddu Auction & Visarjan</span></p>
+                        <span class="bg-emerald-600 text-white text-xs px-3 py-1 rounded-full font-black tracking-wider shadow">Day 5</span>
+                        <h4 class="font-extrabold text-white mt-3 text-lg">18 September</h4>
+                        <div class="mt-4 text-sm text-gray-300">
+                            <p class="flex items-start gap-2.5"><i class="fa-solid fa-gavel text-emerald-400 mt-0.5 text-base"></i> <span><strong>3:00 PM onwards:</strong> Laddu Auction & Visarjan</span></p>
                         </div>
                     </div>
                 </div>
@@ -160,39 +171,39 @@
 
         <!-- Budget & Summary Dashboard -->
         <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-gradient-to-br from-emerald-500 to-teal-600 text-white p-6 rounded-2xl shadow-md">
-                <p class="text-emerald-100 text-sm font-semibold uppercase tracking-wider">Total Collections</p>
-                <h3 class="text-3xl font-black mt-1" id="total-collections">₹0</h3>
-                <p class="text-xs text-emerald-100 mt-2" id="donation-count">0 Donors contributed</p>
+            <div class="bg-gradient-to-br from-emerald-600 to-teal-800 text-white p-6 rounded-3xl shadow-2xl border border-emerald-500/20">
+                <p class="text-emerald-300 text-xs font-bold uppercase tracking-widest">Total Collections</p>
+                <h3 class="text-3xl font-black mt-1.5 tracking-wide" id="total-collections">₹0</h3>
+                <p class="text-xs text-emerald-200/70 mt-2 font-medium" id="donation-count">0 Donors contributed</p>
             </div>
-            <div class="bg-gradient-to-br from-red-500 to-rose-600 text-white p-6 rounded-2xl shadow-md">
-                <p class="text-rose-100 text-sm font-semibold uppercase tracking-wider">Total Cash Expenses</p>
-                <h3 class="text-3xl font-black mt-1" id="total-expenses">₹0</h3>
-                <p class="text-xs text-rose-100 mt-2">Allocated Budget: ₹60,000</p>
+            <div class="bg-gradient-to-br from-red-700 to-rose-900 text-white p-6 rounded-3xl shadow-2xl border border-rose-500/20">
+                <p class="text-rose-300 text-xs font-bold uppercase tracking-widest">Total Cash Expenses</p>
+                <h3 class="text-3xl font-black mt-1.5 tracking-wide" id="total-expenses">₹0</h3>
+                <p class="text-xs text-rose-200/70 mt-2 font-medium">Allocated Budget: ₹60,000</p>
             </div>
-            <div class="bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-6 rounded-2xl shadow-md">
-                <p class="text-blue-100 text-sm font-semibold uppercase tracking-wider">Remaining Cash Balance</p>
-                <h3 class="text-3xl font-black mt-1" id="net-balance">₹0</h3>
-                <p class="text-xs text-blue-100 mt-2">Collections minus Expenses</p>
+            <div class="bg-gradient-to-br from-blue-600 to-indigo-900 text-white p-6 rounded-3xl shadow-2xl border border-blue-500/20">
+                <p class="text-blue-300 text-xs font-bold uppercase tracking-widest">Remaining Cash Balance</p>
+                <h3 class="text-3xl font-black mt-1.5 tracking-wide" id="net-balance">₹0</h3>
+                <p class="text-xs text-blue-200/70 mt-2 font-medium">Collections minus Expenses</p>
             </div>
         </section>
 
         <!-- Budget Categorization Matrix -->
-        <section class="bg-white p-6 rounded-2xl shadow-md">
-            <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <i class="fa-solid fa-chart-pie text-amber-500"></i> Budget Allocation & Spending Status
+        <section class="bg-white/5 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-amber-500/20 royal-glow">
+            <h2 class="text-2xl font-black text-amber-400 mb-6 flex items-center gap-3 border-b border-amber-500/10 pb-4">
+                <i class="fa-solid fa-chart-pie text-xl"></i> Budget Allocation & Spending Status
             </h2>
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse">
                     <thead>
-                        <tr class="border-b border-gray-200 text-gray-500 text-sm">
-                            <th class="pb-3 font-semibold">Category</th>
-                            <th class="pb-3 font-semibold text-right">Budget Limit</th>
-                            <th class="pb-3 font-semibold text-right">Actual Spent</th>
-                            <th class="pb-3 font-semibold text-right">Status</th>
+                        <tr class="border-b border-white/10 text-amber-400/70 text-xs font-bold uppercase tracking-wider">
+                            <th class="pb-4 font-bold">Category</th>
+                            <th class="pb-4 font-bold text-right">Budget Limit</th>
+                            <th class="pb-4 font-bold text-right">Actual Spent</th>
+                            <th class="pb-4 font-bold text-right">Status</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-gray-100 text-sm" id="budget-matrix-body">
+                    <tbody class="divide-y divide-white/5 text-sm" id="budget-matrix-body">
                         <!-- Dynamically populated by JS -->
                     </tbody>
                 </table>
@@ -203,21 +214,21 @@
         <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             
             <!-- Collection Log -->
-            <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-emerald-500">
-                <h2 class="text-xl font-bold text-emerald-700 mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-money-bill-trend-up"></i> Collection Log (Donations)
+            <div class="bg-white/5 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-emerald-500/20 royal-glow">
+                <h2 class="text-2xl font-black text-emerald-400 mb-6 flex items-center gap-3 border-b border-white/10 pb-4">
+                    <i class="fa-solid fa-money-bill-trend-up text-xl"></i> Collection Log (Donations)
                 </h2>
-                <div class="max-h-96 overflow-y-auto space-y-3 pr-2" id="collection-log">
+                <div class="max-h-96 overflow-y-auto space-y-3.5 pr-2" id="collection-log">
                     <!-- Populated by JS -->
                 </div>
             </div>
 
             <!-- Expense Log -->
-            <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-red-500">
-                <h2 class="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-receipt"></i> Cash Expenditure Log
+            <div class="bg-white/5 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-red-500/20 royal-glow">
+                <h2 class="text-2xl font-black text-red-400 mb-6 flex items-center gap-3 border-b border-white/10 pb-4">
+                    <i class="fa-solid fa-receipt text-xl"></i> Cash Expenditure Log
                 </h2>
-                <div class="max-h-96 overflow-y-auto space-y-3 pr-2" id="expense-log">
+                <div class="max-h-96 overflow-y-auto space-y-3.5 pr-2" id="expense-log">
                     <!-- Populated by JS -->
                 </div>
             </div>
@@ -225,7 +236,7 @@
         </section>
     </main>
 
-    <footer class="text-center py-8 text-gray-400 text-xs">
+    <footer class="text-center py-10 text-amber-500/40 text-xs font-medium border-t border-white/5 tracking-wider">
         © 2026 Team Ekadantaya Ganesh Utsav Samiti. All transparency logs are public.
     </footer>
 
@@ -257,7 +268,7 @@
             const balanceEl = document.getElementById('net-balance');
             balanceEl.innerText = `₹${netBalance.toLocaleString('en-IN')}`;
             if(netBalance < 0) {
-                balanceEl.parentElement.className = "bg-gradient-to-br from-amber-600 to-red-600 text-white p-6 rounded-2xl shadow-md";
+                balanceEl.parentElement.className = "bg-gradient-to-br from-amber-700 to-red-900 text-white p-6 rounded-3xl shadow-2xl border border-red-500/20";
             }
 
             const categorySpent = {};
@@ -271,53 +282,6 @@
             Object.keys(budgetLimits).forEach(cat => {
                 const limit = budgetLimits[cat];
                 const spent = categorySpent[cat];
-                let statusBadge = `<span class="px-2 py-0.5 rounded text-xs bg-gray-100 text-gray-600 font-medium">Safe</span>`;
-                if(spent > limit) statusBadge = `<span class="px-2 py-0.5 rounded text-xs bg-red-100 text-red-600 font-bold">Over Budget</span>`;
-                else if (spent === limit && limit > 0) statusBadge = `<span class="px-2 py-0.5 rounded text-xs bg-amber-100 text-amber-700 font-medium">Maxed</span>`;
-                else if (spent > 0) statusBadge = `<span class="px-2 py-0.5 rounded text-xs bg-emerald-100 text-emerald-700 font-medium">Active</span>`;
-
-                matrixBody.innerHTML += `
-                    <tr class="hover:bg-gray-50">
-                        <td class="py-3 font-medium text-gray-700">${cat}</td>
-                        <td class="py-3 text-right text-gray-500 font-mono">₹${limit.toLocaleString('en-IN')}</td>
-                        <td class="py-3 text-right font-semibold text-gray-800 font-mono">₹${spent.toLocaleString('en-IN')}</td>
-                        <td class="py-3 text-right">${statusBadge}</td>
-                    </tr>
-                `;
-            });
-
-            const collLog = document.getElementById('collection-log');
-            collLog.innerHTML = donations.length === 0 ? '<p class="text-sm text-gray-400 italic text-center py-4">No cash collections recorded yet.</p>' : '';
-            [...donations].reverse().forEach(d => {
-                collLog.innerHTML += `
-                    <div class="flex justify-between items-center p-3 bg-emerald-50 border border-emerald-100 rounded-xl">
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs">${d.name.charAt(0)}</div>
-                            <span class="font-medium text-gray-700 text-sm">${d.name}</span>
-                        </div>
-                        <span class="font-bold text-emerald-700 font-mono text-sm">+ ₹${d.amount}</span>
-                    </div>
-                `;
-            });
-
-            const expLog = document.getElementById('expense-log');
-            expLog.innerHTML = expenses.length === 0 ? '<p class="text-sm text-gray-400 italic text-center py-4">No cash expenses recorded yet.</p>' : '';
-            [...expenses].reverse().forEach(e => {
-                expLog.innerHTML += `
-                    <div class="p-3 bg-red-50 border border-red-100 rounded-xl space-y-1">
-                        <div class="flex justify-between items-center">
-                            <span class="font-semibold text-gray-700 text-sm">${e.category}</span>
-                            <span class="font-bold text-red-600 font-mono text-sm">- ₹${e.amount}</span>
-                        </div>
-                        ${e.details ? `<p class="text-xs text-gray-500 italic">${e.details}</p>` : ''}
-                    </div>
-                `;
-            });
-        }
-
-        window.onload = initDashboard;
-    </script>
-</body>
-</html>
-
-            
+                let statusBadge = `<span class="px-2.5 py-0.5 rounded-full text-xs bg-white/10 text-gray-300 font-semibold border border-white/5">Safe</span>`;
+                if(spent > limit) statusBadge = `<span class="px-2.5 py-0.5 rounded-full text-xs bg-red-500/20 text-red-300 font-black border border-red-500/30">Over Budget</span>`;
+                else if (spent === limit && limit > 0) statusBadge = `<span class="px-2.5 py-0.5 rounded-full text-xs bg-amber-500/20 text-amber-300 font-bold bo                      
