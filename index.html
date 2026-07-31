@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +38,13 @@
         .gold-glow {
             text-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
         }
+        /* Dashboard Theme Overrides to Match Image precisely */
+        .light-panel-card {
+            background-color: #ffffff;
+            color: #1e293b;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body class="premium-festival-bg text-gray-100 font-sans overflow-x-hidden selection:bg-amber-500 selection:text-black">
@@ -64,51 +72,13 @@
             <h2 class="text-2xl font-black text-amber-400 mb-8 flex items-center gap-3 border-b border-white/10 pb-4 tracking-wide gold-glow">
                 <i class="fa-solid fa-hands-praying text-xl text-amber-500"></i> Pillars & Venue of the Utsav
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-3xl mx-auto">
                 <!-- Idol Donor -->
                 <div class="bg-black/30 p-5 rounded-2xl border border-white/5 flex flex-col items-center text-center justify-between gap-4 group">
                     <img src="45833.jpg" onerror="this.src='https://images.unsplash.com/photo-1609137144813-2d207ec4169c?w=150';" class="w-28 h-28 rounded-full object-cover border-2 border-amber-500/40" alt="Idol Donor">
                     <div>
                         <p class="text-[11px] text-amber-300 font-extrabold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Ganesh Idol Donor</p>
                         <p class="font-extrabold text-white text-base mt-3">Chandra Sekhar Putta & Family</p>
-                    </div>
-                </div>
-
-                <!-- Annadanam Donor 1 -->
-                <div class="bg-black/30 p-5 rounded-2xl border border-white/5 flex flex-col items-center text-center justify-between gap-4 group">
-                    <img src="45830.jpg" onerror="this.src='https://images.unsplash.com/photo-1561414927-6d86591d0c4f?w=150';" class="w-28 h-28 rounded-full object-cover border-2 border-amber-500/40" alt="Annadanam Donor">
-                    <div>
-                        <p class="text-[11px] text-amber-300 font-extrabold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Annadanam Donor</p>
-                        <p class="font-extrabold text-white text-base mt-3">S.Praveen Dinakar & Family</p>
-                    </div>
-                </div>
-
-                <!-- Annadanam Donor 2 -->
-                <div class="bg-black/30 p-5 rounded-2xl border border-white/5 flex flex-col items-center text-center justify-between gap-4 group">
-                    <img src="41149.jpg" onerror="this.src='https://images.unsplash.com/photo-1561414927-6d86591d0c4f?w=150';" class="w-28 h-28 rounded-full object-cover border-2 border-amber-500/40" alt="Annadanam Donor">
-                    <div>
-                        <p class="text-[11px] text-amber-300 font-extrabold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Annadanam Donor</p>
-                        <p class="font-extrabold text-white text-base mt-3">P.Rajasekhar & Family</p>
-                    </div>
-                </div>
-
-                <!-- Speakers Family Donor -->
-                <div class="bg-black/30 p-5 rounded-2xl border border-white/5 flex flex-col items-center text-center justify-between gap-4 group">
-                    <img src="speakers_donor.jpg" onerror="this.src='https://images.unsplash.com/photo-1545454675-3531b543be5d?w=150';" class="w-28 h-28 rounded-full object-cover border-2 border-amber-500/40" alt="Speaker Donor">
-                    <div>
-                        <p class="text-[11px] text-amber-300 font-extrabold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Sound & Speaker Donor</p>
-                        <p class="font-extrabold text-white text-base mt-3">Peddakadiri Adinarayana Reddy & Family</p>
-                    </div>
-                </div>
-
-                <!-- Speakers Team -->
-                <div class="bg-black/30 p-5 rounded-2xl border border-white/5 flex flex-col items-center text-center justify-between gap-4 group py-6">
-                    <div class="w-24 h-24 bg-gradient-to-br from-amber-500 to-yellow-400 text-gray-950 rounded-full flex items-center justify-center text-4xl shadow-2xl font-bold border border-amber-300">
-                        <i class="fa-solid fa-volume-high"></i>
-                    </div>
-                    <div>
-                        <p class="text-[11px] text-amber-300 font-extrabold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Sound & Speaker</p>
-                        <p class="font-extrabold text-white text-base mt-3">Contributed by Utsav Team</p>
                     </div>
                 </div>
 
@@ -201,131 +171,341 @@
             </div>
         </section>
 
-        <!-- SECURE ACCESS AREA -->
-        <section class="max-w-6xl mx-auto pt-4">
-            <div class="bg-black/20 border border-amber-500/20 rounded-3xl overflow-hidden">
-                <!-- Trigger area that prompts for Code Word -->
-                <div onclick="togglePrivateArea()" class="flex justify-between items-center p-5 cursor-pointer text-amber-500/40 select-none text-xs font-bold uppercase tracking-wider hover:text-amber-400 touch-manipulation">
-                    <span class="flex items-center gap-2">
-                        <i id="folder-icon" class="fa-solid fa-folder-closed"></i> Committee Area Logs
-                    </span>
-                    <i id="chevron-icon" class="fa-solid fa-chevron-down"></i>
-                </div>
-                
-                <!-- Private Data Panels Inside -->
-                <div id="secure-content-box" class="hidden p-6 space-y-12 border-t border-amber-500/15">
-                    <!-- Budget Cards Layout -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="bg-gradient-to-br from-emerald-600 to-teal-950 text-white p-6 rounded-2xl border border-emerald-500/20">
-                            <p class="text-emerald-300 text-xs font-bold uppercase tracking-widest">Total Collections</p>
-                            <h3 class="text-3xl font-black mt-1.5 font-mono">₹45,500</h3>
-                            <p class="text-xs text-emerald-200/60 mt-2 font-medium">18 Donors contributed</p>
-                        </div>
-                        <div class="bg-gradient-to-br from-red-700 to-rose-950 text-white p-6 rounded-2xl border border-rose-500/20">
-                            <p class="text-rose-300 text-xs font-bold uppercase tracking-widest">Total Cash Expenses</p>
-                            <h3 class="text-3xl font-black mt-1.5 font-mono">₹38,200</h3>
-                            <p class="text-xs text-rose-200/60 mt-2 font-medium">Allocated Budget Limit: ₹60,000</p>
-                        </div>
-                        <div class="bg-gradient-to-br from-blue-600 to-indigo-950 text-white p-6 rounded-2xl border border-blue-500/20">
-                            <p class="text-blue-300 text-xs font-bold uppercase tracking-widest">Remaining Cash Balance</p>
-                            <h3 class="text-3xl font-black mt-1.5 font-mono">₹7,300</h3>
-                            <p class="text-xs text-blue-200/70 mt-2 font-medium">Collections minus Expenses</p>
-                        </div>
-                    </div>
-
-                    <!-- Budget Breakdown Matrix Table -->
-                    <div class="royal-card p-6 rounded-2xl">
-                        <h2 class="text-xl font-black text-amber-400 mb-6 flex items-center gap-3 border-b border-white/10 pb-4">
-                            <i class="fa-solid fa-chart-pie text-amber-500"></i> Budget Allocation & Spending Status
-                        </h2>
-                        <div class="overflow-x-auto">
-                            <table class="w-full text-left border-collapse text-sm">
-                                <thead>
-                                    <tr class="border-b border-white/10 text-amber-400/70 text-xs font-bold uppercase tracking-wider">
-                                        <th class="pb-4 font-bold">Category</th>
-                                        <th class="pb-4 font-bold text-right">Budget Limit</th>
-                                        <th class="pb-4 font-bold text-right">Actual Spent</th>
-                                        <th class="pb-4 font-bold text-right">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="divide-y divide-white/5">
-                                    <tr class="hover:bg-white/5"><td class="py-3.5 font-bold">Mandapam</td><td class="text-right font-mono">₹15,000</td><td class="text-right font-bold font-mono">₹14,500</td><td class="text-right"><span class="px-2 py-0.5 rounded text-xs bg-emerald-500/20 text-emerald-300">Active</span></td></tr>
-                                    <tr class="hover:bg-white/5"><td class="py-3.5 font-bold">Pooja</td><td class="text-right font-mono">₹20,000</td><td class="text-right font-bold font-mono">₹18,000</td><td class="text-right"><span class="px-2 py-0.5 rounded text-xs bg-emerald-500/20 text-emerald-300">Active</span></td></tr>
-                                    <tr class="hover:bg-white/5"><td class="py-3.5 font-bold">Lighting</td><td class="text-right font-mono">₹5,000</td><td class="text-right font-bold font-mono">₹4,200</td><td class="text-right"><span class="px-2 py-0.5 rounded text-xs bg-emerald-500/20 text-emerald-300">Active</span></td></tr>
-                                    <tr class="hover:bg-white/5"><td class="py-3.5 font-bold">Flex</td><td class="text-right font-mono">₹2,000</td><td class="text-right font-bold font-mono">₹1,500</td><td class="text-right"><span class="px-2 py-0.5 rounded text-xs bg-emerald-500/20 text-emerald-300">Active</span></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!-- Log Ledgers Columns -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div class="royal-card p-6 rounded-2xl">
-                            <h2 class="text-lg font-black text-emerald-400 mb-6 border-b border-white/10 pb-4"><i class="fa-solid fa-money-bill-trend-up mr-2"></i>Collection Log (Donations)</h2>
-                            <div class="space-y-3">
-                                <div class="flex justify-between items-center p-3 bg-emerald-950/30 border border-emerald-500/20 rounded-xl"><span class="text-sm font-bold">Chandra Sekhar Putta</span><span class="font-bold text-emerald-400 font-mono">+ ₹25,000</span></div>
-                                <div class="flex justify-between items-center p-3 bg-emerald-950/30 border border-emerald-500/20 rounded-xl"><span class="text-sm font-bold">S.Praveen Dinakar</span><span class="font-bold text-emerald-400 font-mono">+ ₹10,500</span></div>
-                                <div class="flex justify-between items-center p-3 bg-emerald-950/30 border border-emerald-500/20 rounded-xl"><span class="text-sm font-bold">P.Rajasekhar</span><span class="font-bold text-emerald-400 font-mono">+ ₹10,000</span></div>
-                            </div>
-                        </div>
-                        <div class="royal-card p-6 rounded-2xl">
-                            <h2 class="text-lg font-black text-red-400 mb-6 border-b border-white/10 pb-4"><i class="fa-solid fa-receipt mr-2"></i>Expenditure Log</h2>
-                            <div class="space-y-3">
-                                <div class="flex justify-between items-center p-3 bg-red-950/30 border border-red-500/20 rounded-xl"><span class="text-sm font-bold">Mandapam Setup Clamps</span><span class="font-bold text-red-400 font-mono">- ₹14,500</span></div>
-                                <div class="flex justify-between items-center p-3 bg-red-950/30 border border-red-500/20 rounded-xl"><span class="text-sm font-bold">Pooja Materials & Flowers</span><span class="font-bold text-red-400 font-mono">- ₹18,000</span></div>
-                                <div class="flex justify-between items-center p-3 bg-red-950/30 border border-red-500/20 rounded-xl"><span class="text-sm font-bold">Main Welcome Flex Banner</span><span class="font-bold text-red-400 font-mono">- ₹1,500</span></div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- SECURE ACCESS CONTROLLER MODULE -->
+        <section class="max-w-xs mx-auto text-center pt-4">
+            <div id="pin-prompt-box" class="bg-black/40 p-4 rounded-2xl border border-amber-500/20 space-y-3">
+                <p class="text-xs font-bold text-amber-400"><i class="fa-solid fa-shield-halved mr-1"></i> Committee Access Login</p>
+                <div class="flex gap-2">
+                    <input type="password" id="bottomPinInput" placeholder="Enter security PIN" class="bg-black/60 border border-white/10 text-white rounded-xl px-3 py-1.5 text-xs font-bold w-full text-center outline-none focus:border-amber-400">
+                    <a href="javascript:void(0);" onclick="verifyCommitteePin(); return false;" class="bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs px-4 py-2 rounded-xl transition-all inline-flex items-center justify-center cursor-pointer active:scale-95">Verify</a>
                 </div>
             </div>
         </section>
+
+        <!-- WHITE THEME FESTIVAL CASH COUNTER MODULE (Hidden Until Unlocked) -->
+        <div id="private-committee-panel" class="hidden space-y-8 pt-6 max-w-lg mx-auto">
+
+            <!-- Card 1: Festival Cash Counter Status -->
+            <div class="light-panel-card p-6 space-y-5">
+                <h3 class="text-lg font-bold text-gray-800 flex items-center gap-2">
+                    <span class="text-orange-500">⚜</span> Festival Cash Counter
+                </h3>
+                
+                <!-- Target Goal Box -->
+                <div class="bg-orange-50/70 border border-orange-100 p-4 rounded-xl flex justify-between items-center">
+                    <div>
+                        <p class="text-[10px] uppercase font-bold text-orange-600/80 tracking-wider">Target Goal</p>
+                        <p class="text-2xl font-black text-orange-600 mt-0.5">₹60,000</p>
+                    </div>
+                    <i class="fa-solid fa-bullseye text-orange-300 text-lg"></i>
+                </div>
+
+                <!-- Total Collected Box -->
+                <div class="bg-emerald-50/70 border border-emerald-100 p-4 rounded-xl flex justify-between items-center">
+                    <div>
+                        <p class="text-[10px] uppercase font-bold text-emerald-600/80 tracking-wider">Total Collected</p>
+                        <p class="text-2xl font-black text-emerald-600 mt-0.5" id="lbl-total-collected">₹4,000</p>
+                    </div>
+                    <i class="fa-solid fa-hand-holding-dollar text-emerald-300 text-lg"></i>
+                </div>
+
+                <!-- Total Spent Box -->
+                <div class="bg-rose-50/70 border border-rose-100 p-4 rounded-xl flex justify-between items-center">
+                    <div>
+                        <p class="text-[10px] uppercase font-bold text-rose-600/80 tracking-wider">Total Spent</p>
+                        <p class="text-2xl font-black text-rose-600 mt-0.5" id="lbl-total-spent">₹7,000</p>
+                    </div>
+                    <i class="fa-solid fa-receipt text-rose-300 text-lg"></i>
+                </div>
+
+                <!-- Cash in Hand Box -->
+                <div class="bg-blue-50/70 border border-blue-100 p-4 rounded-xl flex justify-between items-center">
+                    <div>
+                        <p class="text-[10px] uppercase font-bold text-blue-600/80 tracking-wider">Cash in Hand</p>
+                        <p class="text-2xl font-black text-blue-600 mt-0.5" id="lbl-cash-hand">₹-3,000</p>
+                    </div>
+                    <i class="fa-solid fa-wallet text-blue-300 text-lg"></i>
+                </div>
+
+                <!-- Target Progress Slider Bar -->
+                <div class="pt-2 space-y-1.5">
+                    <div class="flex justify-between text-[11px] font-bold text-gray-500">
+                        <span id="lbl-percentage">7% Target Reached</span>
+                        <span id="lbl-remaining-gap">Remaining Gap: ₹56,000</span>
+                    </div>
+                    <div class="w-full bg-gray-100 rounded-full h-2">
+                        <div id="progress-bar-fill" class="bg-gradient-to-r from-orange-500 to-emerald-500 h-2 rounded-full" style="width: 7%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Collection Log Book -->
+            <div class="light-panel-card p-6 space-y-4">
+                <h3 class="text-base font-bold text-gray-800 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-arrow-down text-emerald-600"></i> Collection Log Book (Funds In)
+                </h3>
+                
+                <!-- Log Entry Inline Row -->
+                <div class="flex gap-2">
+                    <input type="text" id="addDonorName" placeholder="House / Sponsor" class="bg-gray-50 border border-gray-200 text-gray-800 rounded-xl px-3 py-2 text-xs font-semibold w-full outline-none focus:border-emerald-500">
+                    <input type="number" id="addDonorAmount" placeholder="Amount (₹)" class="bg-gray-50 border border-gray-200 text-gray-800 rounded-xl px-3 py-2 text-xs font-semibold w-28 outline-none focus:border-emerald-500">
+                    <button onclick="submitDonorEntry()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 rounded-xl transition-all flex items-center justify-center gap-1"><i class="fa-solid fa-plus"></i>Add</button>
+                </div>
+
+                <!-- Collections Table List -->
+                <div class="overflow-hidden pt-2">
+                    <table class="w-full text-left text-xs">
+                        <thead>
+                            <tr class="border-b border-gray-100 text-gray-400 font-bold uppercase tracking-wider text-[10px]">
+                                <th class="pb-2">Source/Contributor</th>
+                                <th class="pb-2 text-center">Amount Paid</th>
+                                <th class="pb-2 text-right">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-50 font-medium text-gray-700" id="table-body-collections">
+                            <!-- Populated dynamically via Engine -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Card 3: Expenditure Log Book -->
+            <div class="light-panel-card p-6 space-y-4">
+                <h3 class="text-base font-bold text-gray-800 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-arrow-up text-rose-600"></i> Expenditure Log Book (Actual Costs)
+                </h3>
+                
+                <!-- Select Expense Category Dropdown -->
+                <select id="addExpenseCategory" class="bg-gray-50 border border-gray-200 text-gray-700 rounded-xl px-3 py-2 text-xs font-semibold w-full outline-none focus:border-rose-500">
+                    <option value="Pooja & Rituals">📿 Pooja & Rituals</option>
+                    <option value="Mandapam Decoration">🎪 Mandapam Decoration</option>
+                    <option value="Lighting Setup">💡 Lighting Setup</option>
+                    <option value="Flex & Banners">🖼️ Flex & Banners</option>
+                    <option value="Visarjan Vehicles">🚚 Visarjan Vehicles</option>
+                    <option value="Program Gifts">🎁 Program Gifts</option>
+                    <option value="Festive Crackers">💥 Festive Crackers</option>
+                    <option value="Contingency Buffer">🛡️ Contingency Buffer</option>
+                </select>
+
+                <!-- Description Input -->
+                <input type="text" id="addExpenseDetails" placeholder="e.g., Cloth payment, Fruits" class="bg-gray-50 border border-gray-200 text-gray-800 rounded-xl px-3 py-2 text-xs font-semibold w-full outline-none focus:border-rose-500">
+                
+                <!-- Amount Row Button -->
+                <div class="flex gap-2">
+                    <input type="number" id="addExpenseAmount" placeholder="Cost (₹)" class="bg-gray-50 border border-gray-200 text-gray-800 rounded-xl px-3 py-2 text-xs font-semibold w-full outline-none focus:border-rose-500">
+                    <button onclick="submitExpenseEntry()" class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-5 rounded-xl transition-all whitespace-nowrap">— Log Cost</button>
+                </div>
+
+                <!-- Expenses Table List -->
+                <div class="overflow-hidden pt-2">
+                    <table class="w-full text-left text-xs">
+                        <thead>
+                            <tr class="border-b border-gray-100 text-gray-400 font-bold uppercase tracking-wider text-[10px]">
+                                <th class="pb-2">Category</th>
+                                <th class="pb-2">Description/Details</th>
+                                <th class="pb-2 text-right">Amount Spent</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-50 font-medium text-gray-700" id="table-body-expenses">
+                            <!-- Populated dynamically via Engine -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Card 4: Estimated Allocations Reference Matrix -->
+            <div class="light-panel-card p-6 space-y-5">
+                <h3 class="text-base font-bold text-gray-800 flex items-center gap-2">
+                    <i class="fa-solid fa-folder-open text-slate-500"></i> Estimated Allocations Reference
+                </h3>
+                
+                <!-- Category Reference List Layout Blocks matching image specs -->
+                <div class="space-y-4">
+                    <!-- Block 1 -->
+                    <div class="bg-gray-50/50 p-3 rounded-xl border border-gray-100 flex justify-between items-start text-xs">
+                        <div>
+                            <p class="font-bold text-amber-700 flex items-center gap-1">📿 Pooja & Rituals</p>
+                            <p class="text-[10px] text-gray-400 mt-1">Pandit ji dakshina, Samagri items, initial requirements.</p>
+                        </div>
+                        <span class="font-bold text-amber-600 font-mono">₹20,000</span>
+                    </div>
+                    <!-- Block 2 -->
+                    <div class="bg-gray-50/50 p-3 rounded-xl border border-gray-100 text-xs space-y-2">
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold text-orange-700 flex items-center gap-1">🎪 Mandapam Decoration</p>
+                            <span class="font-bold text-orange-600 font-mono">₹14,000</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-[10px] text-gray-400 font-medium">
+                            <p>• Cloth: ₹6,000</p>
+                            <p>• Carpets: ₹4,000</p>
+                            <p>• Chandelier: ₹2,000</p>
+                            <p>• Par light: ₹2,000</p>
+                        </div>
+                    </div>
+                    <!-- Block 3 -->
+                    <div class="bg-gray-50/50 p-3 rounded-xl border border-gray-100 text-xs space-y-2">
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold text-yellow-700 flex items-center gap-1">💡 Lighting Setup</p>
+                            <span class="font-bold text-yellow-600 font-mono">₹4,400</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-x-4 text-[10px] text-gray-400 font-medium">
+                            <p>• Pixels: ₹3,000</p>
+                            <p>• Wiring: ₹1,400</p>
+                        </div>
+                    </div>
+                    <!-- Remaining Reference Blocks Mini Rows -->
+                    <div class="divide-y divide-gray-100 text-gray-600 font-semibold text-[11px] pt-1">
+                        <div class="flex justify-between py-2"><span>🚚 Visarjan Vehicles</span><span class="font-mono text-gray-500">₹5,000</span></div>
+                        <div class="flex justify-between py-2"><span>🎁 Program gifts</span><span class="font-mono text-gray-500">₹5,000</span></div>
+                        <div class="flex justify-between py-2"><span>💥 Festive Crackers</span><span class="font-mono text-gray-500">₹5,000</span></div>
+                        <div class="flex justify-between py-2"><span>🖼️ Flex & Banners</span><span class="font-mono text-gray-500">₹2,000</span></div>
+                        <div class="flex justify-between py-2 text-emerald-600"><span>🛡️ Contingency Buffer</span><span class="font-mono">₹4,600</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </main>
 
     <footer class="text-center py-12 text-amber-500/30 text-xs font-semibold border-t border-white/5 tracking-wider relative z-10">
-        © 2026 Team Ekadantaya Ganesh Utsav Samiti. All rights reserved.
+        © 2026 Team Ekadantaya Ganesh Utsav Samiti. All portal rights reserved.
     </footer>
 
-    <!-- CODE WORD CONTROLLER ENGINE -->
+    <!-- INTERFACE ENGINE SCRIPT -->
     <script>
-        let isUnlocked = false;
+        // Preloaded values perfectly matching your layout example image!
+        let donationsList = [
+            { id: 1, name: "Shop Corner Banner Sponsor", amount: 2500 },
+            { id: 2, name: "House No. 12", amount: 1000 },
+            { id: 3, name: "House No. 45", amount: 500 }
+        ];
 
-        function togglePrivateArea() {
-            const contentBox = document.getElementById('secure-content-box');
-            const folderIcon = document.getElementById('folder-icon');
-            const chevronIcon = document.getElementById('chevron-icon');
+        let expensesList = [
+            { category: "MANDAPAM DECORATION", details: "6k for mandap cloth", amount: 6000 },
+            { category: "FLEX & BANNERS", details: "1k for flex 📄 (Tap to view bill)", amount: 1000 }
+        ];
 
-            if (!isUnlocked) {
-                // Prompt for the code word text
-                const codeWord = prompt("Enter Committee Secret Code Word:");
-                
-                if (codeWord !== null && codeWord.trim().toUpperCase() === "TEUS") {
-                    isUnlocked = true;
-                    contentBox.classList.remove('hidden');
-                    folderIcon.className = "fa-solid fa-folder-open";
-                    chevronIcon.className = "fa-solid fa-chevron-down rotate-180 transition-transform duration-300";
-                    
-                    // Smooth scroll down to layout logs area
-                    setTimeout(() => {
-                        contentBox.scrollIntoView({ behavior: 'smooth' });
-                    }, 50);
-                } else if (codeWord !== null) {
-                    alert("Incorrect Code Word. Access Denied.");
-                }
+        function verifyCommitteePin() {
+            const inputVal = document.getElementById('bottomPinInput').value.trim();
+            // Accepts your original pin text code seamlessly
+            if (inputVal === "2709" || inputVal.toUpperCase() === "TEUS") {
+                document.getElementById('pin-prompt-box').classList.add('hidden');
+                const panel = document.getElementById('private-committee-panel');
+                panel.classList.remove('hidden');
+                calculateEngineBalances();
             } else {
-                // If already unlocked, let it toggle open/close normally
-                if (contentBox.classList.contains('hidden')) {
-                    contentBox.classList.remove('hidden');
-                    folderIcon.className = "fa-solid fa-folder-open";
-                    chevronIcon.className = "fa-solid fa-chevron-down rotate-180 transition-transform duration-300";
-                } else {
-                    contentBox.classList.add('hidden');
-                    folderIcon.className = "fa-solid fa-folder-closed";
-                    chevronIcon.className = "fa-solid fa-chevron-down transition-transform duration-300";
-                }
+                alert("Incorrect PIN code.");
             }
+        }
+
+        function calculateEngineBalances() {
+            let sumCollected = donationsList.reduce((acc, current) => acc + current.amount, 0);
+            let sumSpent = expensesList.reduce((acc, current) => acc + current.amount, 0);
+            let cashHand = sumCollected - sumSpent;
+            
+            let targetGoal = 60000;
+            let percentage = Math.min(Math.round((sumCollected / targetGoal) * 100), 100);
+            let remainingGap = Math.max(targetGoal - sumCollected, 0);
+
+            // Print values to Counter UI boxes
+            document.getElementById('lbl-total-collected').innerText = `₹${sumCollected.toLocaleString('en-IN')}`;
+            document.getElementById('lbl-total-spent').innerText = `₹${sumSpent.toLocaleString('en-IN')}`;
+            
+            // Format negative vs positive cash in hand gracefully
+            if (cashHand < 0) {
+                document.getElementById('lbl-cash-hand').innerText = `₹-${Math.abs(cashHand).toLocaleString('en-IN')}`;
+            } else {
+                document.getElementById('lbl-cash-hand').innerText = `₹${cashHand.toLocaleString('en-IN')}`;
+            }
+
+            document.getElementById('lbl-percentage').innerText = `${percentage}% Target Reached`;
+            document.getElementById('lbl-remaining-gap').innerText = `Remaining Gap: ₹${remainingGap.toLocaleString('en-IN')}`;
+            document.getElementById('progress-bar-fill').style.width = `${percentage}%`;
+
+            renderCollectionLogs();
+            renderExpenseLogs();
+        }
+
+        function renderCollectionLogs() {
+            const body = document.getElementById('table-body-collections');
+            body.innerHTML = '';
+            
+            donationsList.forEach(item => {
+                body.innerHTML += `
+                    <tr class="border-b border-gray-50">
+                        <td class="py-3 font-semibold text-gray-800">${item.name}</td>
+                        <td class="py-3 text-center text-emerald-600 font-bold font-mono">₹${item.amount.toLocaleString('en-IN')}</td>
+                        <td class="py-3 text-right">
+                            <button onclick="deleteDonorItem(${item.id})" class="text-red-500 hover:text-red-700 active:scale-90 transition-all px-2 py-1">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </td>
+                    </tr>
+                `;
+            });
+        }
+
+        function renderExpenseLogs() {
+            const body = document.getElementById('table-body-expenses');
+            body.innerHTML = '';
+
+            expensesList.forEach(item => {
+                body.innerHTML += `
+                    <tr class="border-b border-gray-50">
+                        <td class="py-3 font-bold text-orange-600 tracking-wide uppercase text-[10px] max-w-[110px] pr-2">${item.category}</td>
+                        <td class="py-3 text-gray-500 font-medium text-xs">${item.details}</td>
+                        <td class="py-3 text-right font-bold text-red-500 font-mono">₹${item.amount.toLocaleString('en-IN')}</td>
+                    </tr>
+                `;
+            });
+        }
+
+        function submitDonorEntry() {
+            const inputName = document.getElementById('addDonorName');
+            const inputAmount = document.getElementById('addDonorAmount');
+
+            if (inputName.value.trim() === '' || inputAmount.value <= 0) {
+                alert('Please fill out a valid name and cash amount.');
+                return;
+            }
+
+            donationsList.push({
+                id: Date.now(),
+                name: inputName.value.trim(),
+                amount: parseInt(inputAmount.value)
+            });
+
+            inputName.value = '';
+            inputAmount.value = '';
+            calculateEngineBalances();
+        }
+
+        function submitExpenseEntry() {
+            const selectCategory = document.getElementById('addExpenseCategory');
+            const inputDetails = document.getElementById('addExpenseDetails');
+            const inputAmount = document.getElementById('addExpenseAmount');
+
+            if (inputDetails.value.trim() === '' || inputAmount.value <= 0) {
+                alert('Please describe the cost details and add a valid purchase amount.');
+                return;
+            }
+
+            expensesList.push({
+                category: selectCategory.value.toUpperCase(),
+                details: inputDetails.value.trim(),
+                amount: parseInt(inputAmount.value)
+            });
+
+            inputDetails.value = '';
+            inputAmount.value = '';
+            calculateEngineBalances();
+        }
+
+        function deleteDonorItem(id) {
+            donationsList = donationsList.filter(item => item.id !== id);
+            calculateEngineBalances();
         }
     </script>
 </body>
-</html>
-               
+</html>                                              
