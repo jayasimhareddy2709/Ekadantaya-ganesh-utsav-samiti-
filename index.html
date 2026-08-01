@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -169,12 +169,11 @@
             </div>
         </section>
 
-        <!-- SECURE ACCESS CONTAINER (HIDDEN ANSWER FROM DEVOTEES) -->
+        <!-- SECURE ACCESS CONTAINER -->
         <section class="max-w-xs mx-auto text-center pt-4">
             <div id="pin-prompt-box" class="bg-black/40 p-4 rounded-2xl border border-amber-500/20 space-y-3">
                 <p class="text-xs font-bold text-amber-400"><i class="fa-solid fa-shield-halved mr-1"></i> Committee Access Login</p>
                 <div class="flex gap-2">
-                    <!-- Removed the (TEUS) text so devotees don't see it -->
                     <input type="password" id="bottomPinInput" placeholder="Enter Committee Code Word" class="bg-black/60 border border-white/10 text-white rounded-xl px-3 py-1.5 text-xs font-bold w-full text-center outline-none focus:border-amber-400">
                     <a href="javascript:void(0);" onclick="verifyCommitteePin(); return false;" class="bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs px-4 py-2 rounded-xl transition-all inline-flex items-center justify-center cursor-pointer active:scale-95">Verify</a>
                 </div>
@@ -292,7 +291,7 @@
                         <thead>
                             <tr class="border-b border-gray-100 text-gray-400 font-bold uppercase tracking-wider text-[10px]">
                                 <th class="pb-2">Category</th>
-                                   <th class="pb-2">Description/Details</th>
+                                <th class="pb-2">Description/Details</th>
                                 <th class="pb-2 text-right">Amount Spent</th>
                             </tr>
                         </thead>
@@ -340,7 +339,17 @@
 
     <!-- INTERFACE LOG ENGINE SCRIPT -->
     <script>
-        let donationsList = [];
+        // Updated array with your batch entries initialized directly
+        let donationsList = [
+            { id: 1, name: "G.Gangadhar (UPI)", amount: 1800 },
+            { id: 2, name: "Shiva (Cash)", amount: 500 },
+            { id: 3, name: "Ysr naidu (UPI)", amount: 200 },
+            { id: 4, name: "Narasimha Reddy (Cash)", amount: 500 },
+            { id: 5, name: "J venkatesh (Cash)", amount: 200 },
+            { id: 6, name: "Punith (Cash)", amount: 100 },
+            { id: 7, name: "R rama das (Cash)", amount: 2000 }
+        ];
+        
         let expensesList = [];
 
         function verifyCommitteePin() {
@@ -472,5 +481,7 @@
         }
     </script>
 </body>
-</html>        
-                                                
+</html>
+      
+                         
+                        
