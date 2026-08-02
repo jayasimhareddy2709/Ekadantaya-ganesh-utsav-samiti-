@@ -95,17 +95,24 @@
             </div>
         </section>
 
-        <!-- Devotee Support Payments QR Section -->
+        <!-- Devotee Support Payments QR Section (Updated Click-to-Pay deep-link functionality) -->
         <section class="royal-card p-6 rounded-3xl max-w-md mx-auto border-2 border-amber-400/40">
             <h2 class="text-xl font-black text-amber-400 mb-4 text-center tracking-wide gold-glow">
                 <i class="fa-solid fa-qrcode text-amber-500 mr-2"></i> Support The Utsav (Donations)
             </h2>
-            <p class="text-xs text-center text-gray-300 mb-6 font-medium">Scan this secure UPI QR code using any payment app to send your contributions directly to the committee funds.</p>
+            <p class="text-xs text-center text-gray-300 mb-4 font-medium">Scan this secure UPI QR code using any payment app, or <strong>directly tap the QR code / button below</strong> to pay instantly from this phone.</p>
             <div class="flex flex-col items-center gap-4">
-                <div class="bg-white p-4 rounded-2xl shadow-[0_0_20px_rgba(251,191,36,0.15)] border border-amber-300 max-w-[240px]">
+                <!-- Clickable Image wrapping UPI Deep Link Asset -->
+                <a href="upi://pay?pa=peddakadirijayasimhareddy@oksbi&pn=Team%20Ekadantaya%20Ganesh%20Utsav%20Samiti&tn=Ganesh%20Festival%20Donation&cu=INR" class="block bg-white p-4 rounded-2xl shadow-[0_0_20px_rgba(251,191,36,0.15)] border border-amber-300 max-w-[240px] transition-transform hover:scale-105 active:scale-95">
                     <img src="payment_qr.jpg" onerror="this.src='https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=300';" class="w-full h-auto object-contain rounded-lg" alt="UPI Payment QR">
-                </div>
-                <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-4 py-1.5 rounded-full border border-amber-500/20 tracking-widest uppercase">Accepting All UPI Apps</span>
+                </a>
+                
+                <!-- Explicit Direct Mobile Tap Action Button -->
+                <a href="upi://pay?pa=peddakadirijayasimhareddy@oksbi&pn=Team%20Ekadantaya%20Ganesh%20Utsav%20Samiti&tn=Ganesh%20Festival%20Donation&cu=INR" class="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-black text-xs px-6 py-2.5 rounded-xl transition-all shadow-md active:scale-95 flex items-center gap-2">
+                    <i class="fa-solid fa-mobile-screen-button"></i> Tap Here to Pay via Mobile App
+                </a>
+
+                <span class="text-[10px] font-bold text-amber-400 bg-amber-500/10 px-4 py-1.5 rounded-full border border-amber-500/20 tracking-widest uppercase">Accepting All UPI Apps</span>
             </div>
         </section>
 
@@ -344,7 +351,6 @@
 
     <!-- INTERFACE LOG ENGINE SCRIPT -->
     <script>
-        // Array matched exactly to your live repository image names
         let donationsList = [
             { id: 1, name: "G.Gangadhar (UPI)", amount: 1800, receiptUrl: "receipt_gangadhar.jpg" },
             { id: 2, name: "Shiva (Cash)", amount: 500, receiptUrl: "receipt_shiva.jpg" },
@@ -498,5 +504,7 @@
         }
     </script>
 </body>
-</html>                                                                <td class="py-3 text-right">
-                            
+</html>
+                                                </div>
+                                         
+                
