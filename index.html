@@ -1,4 +1,4 @@
-            <!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,6 +42,9 @@
             color: #1e293b;
             border-radius: 1.5rem;
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .insta-gradient {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         }
     </style>
 </head>
@@ -102,17 +105,32 @@
             </h2>
             <p class="text-xs text-center text-gray-300 mb-4 font-medium">Scan this secure UPI QR code using any payment app, or **directly tap the QR code / button below** to pay instantly from this phone.</p>
             <div class="flex flex-col items-center gap-4">
-                <!-- Deep Link configured with the corrected meena.peddakhadiri1@ybl string -->
                 <a href="upi://pay?pa=meena.peddakhadiri1@ybl" class="block bg-white p-4 rounded-2xl shadow-[0_0_20px_rgba(251,191,36,0.15)] border border-amber-300 max-w-[240px] transition-transform hover:scale-105 active:scale-95">
                     <img src="payment_qr.jpg" onerror="this.src='https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=300';" class="w-full h-auto object-contain rounded-lg" alt="UPI Payment QR">
                 </a>
                 
-                <!-- Explicit action button tied to meena.peddakhadiri1@ybl -->
                 <a href="upi://pay?pa=meena.peddakhadiri1@ybl" class="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-black text-xs px-6 py-2.5 rounded-xl transition-all shadow-md active:scale-95 flex items-center gap-2">
                     <i class="fa-solid fa-mobile-screen-button"></i> Tap Here to Pay via Mobile App
                 </a>
 
                 <span class="text-[10px] font-bold text-amber-400 bg-amber-500/10 px-4 py-1.5 rounded-full border border-amber-500/20 tracking-widest uppercase">Accepting All UPI Apps</span>
+            </div>
+        </section>
+
+        <!-- Official Instagram Connect Section -->
+        <section class="royal-card p-6 rounded-3xl max-w-md mx-auto border border-rose-500/30">
+            <h2 class="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-400 mb-4 text-center tracking-wide">
+                <i class="fa-brands fa-instagram mr-2 text-pink-500"></i> Follow Our Utsav Updates
+            </h2>
+            <p class="text-xs text-center text-gray-300 mb-5 font-medium">Scan the code below or tap directly to catch our latest event photos, status clips, and celebration announcements!</p>
+            <div class="flex flex-col items-center gap-4">
+                <a href="https://www.instagram.com/teamekadantaya_gus?igsh=MTdicWsyenZ5MDljYQ==" target="_blank" class="block bg-white p-1 rounded-2xl shadow-[0_0_20px_rgba(220,39,67,0.15)] max-w-[220px] transition-transform hover:scale-105 active:scale-95">
+                    <img src="instagram_qr.png" onerror="this.src='https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=300';" class="w-full h-auto object-contain rounded-xl" alt="Instagram QR Code">
+                </a>
+                
+                <a href="https://www.instagram.com/teamekadantaya_gus?igsh=MTdicWsyenZ5MDljYQ==" target="_blank" class="insta-gradient hover:opacity-90 text-white font-black text-xs px-6 py-2.5 rounded-xl transition-all shadow-md active:scale-95 flex items-center gap-2">
+                    <i class="fa-brands fa-instagram text-sm"></i> @teamekadantaya_gus
+                </a>
             </div>
         </section>
 
@@ -505,7 +523,5 @@
     </script>
 </body>
 </html>
-                                                    </a>`;
-                                                                </div>
-                                         
-                
+                                                                <i class="fa-solid fa-om"></i> Ganapati Homam (Separate Pool Tracker)
+                                    
