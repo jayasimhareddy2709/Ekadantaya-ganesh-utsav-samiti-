@@ -1,4 +1,4 @@
-     <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -103,35 +103,34 @@
             </div>
         </section>
 
-        <!-- Devotee Support Payments Section (Updated with Direct App-Opening Protocols) -->
+        <!-- Devotee Support Payments Section -->
         <section class="royal-card p-6 rounded-3xl max-w-md mx-auto border-2 border-amber-400/40">
             <h2 class="text-xl font-black text-amber-400 mb-4 text-center tracking-wide gold-glow">
                 <i class="fa-solid fa-qrcode text-amber-500 mr-2"></i> Support The Utsav (Donations)
             </h2>
-            <p class="text-xs text-center text-gray-300 mb-4 font-medium">Scan this QR code using another phone, or if you are using this same mobile device, **tap any app logo below to pay instantly**.</p>
+            <p class="text-xs text-center text-gray-300 mb-4 font-medium">Scan this secure QR code using another device, or if using this same phone, select your payment application below.</p>
             
             <div class="flex flex-col items-center gap-5">
                 <div class="bg-white p-4 rounded-2xl shadow-[0_0_20px_rgba(251,191,36,0.15)] border border-amber-300 max-w-[220px]">
                     <img src="payment_qr.jpg" onerror="this.src='https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=300';" class="w-full h-auto object-contain rounded-lg" alt="UPI Payment QR">
                 </div>
 
-                <!-- DIRECT MOBILE PAYMENTS CHOOSE DEEP LINK PORTALS -->
+                <!-- DIRECT MOBILE INSTANT APP SELECTION CHANNELS -->
                 <div class="w-full grid grid-cols-1 gap-2.5 text-center px-2">
-                    <!-- Universal System Trigger App Chooser -->
                     <a href="upi://pay?pa=meena.peddakhadiri1@ybl" class="w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-black font-black text-xs py-2.5 rounded-xl shadow active:scale-95 flex items-center justify-center gap-2 transition-transform">
                         <i class="fa-solid fa-mobile-screen-button"></i> Open Installed UPI Apps
                     </a>
 
                     <div class="grid grid-cols-3 gap-2 pt-1.5">
-                        <!-- Direct PhonePe Hook -->
+                        <!-- Direct PhonePe Launcher -->
                         <a href="phonepe://pay?pa=meena.peddakhadiri1@ybl" class="bg-purple-900/40 hover:bg-purple-900/60 border border-purple-500/30 text-white font-extrabold text-[10px] py-2 rounded-xl active:scale-95 flex flex-col items-center justify-center gap-1 transition-all">
                             <i class="fa-solid fa-wallet text-purple-400 text-sm"></i> PhonePe
                         </a>
-                        <!-- Direct Google Pay Hook -->
+                        <!-- Direct Google Pay Launcher -->
                         <a href="intent://pay?pa=meena.peddakhadiri1@ybl#Intent;scheme=upi;package=com.google.android.apps.nbu.paisa.user;end" class="bg-blue-900/40 hover:bg-blue-900/60 border border-blue-500/30 text-white font-extrabold text-[10px] py-2 rounded-xl active:scale-95 flex flex-col items-center justify-center gap-1 transition-all">
-                            <i class="fa-solid fa-鋪 text-blue-400 text-sm"></i> Google Pay
+                            <i class="fa-solid fa-brands fa-google-pay text-blue-400 text-sm"></i> G-Pay
                         </a>
-                        <!-- Direct Paytm Hook -->
+                        <!-- Direct Paytm Launcher -->
                         <a href="paytmmp://pay?pa=meena.peddakhadiri1@ybl" class="bg-sky-900/40 hover:bg-sky-900/60 border border-sky-500/30 text-white font-extrabold text-[10px] py-2 rounded-xl active:scale-95 flex flex-col items-center justify-center gap-1 transition-all">
                             <i class="fa-solid fa-money-bill-1 text-sky-400 text-sm"></i> Paytm
                         </a>
@@ -141,7 +140,7 @@
                 <!-- Copy Contingency Information Panels -->
                 <div class="w-full bg-black/40 rounded-xl p-3 border border-white/10 space-y-2.5 text-center">
                     <div>
-                        <p class="text-[10px] uppercase tracking-wider text-amber-400 font-bold mb-1">Backup UPI ID</p>
+                        <p class="text-[10px] uppercase tracking-wider text-amber-400 font-bold mb-1">Committee UPI ID</p>
                         <div class="flex items-center justify-between bg-black/60 border border-white/5 rounded-lg px-2.5 py-1.5 text-xs font-mono text-gray-200">
                             <span id="upi-string-target">meena.peddakhadiri1@ybl</span>
                             <button onclick="copyEngineString('upi-string-target', 'btn-copy-upi')" id="btn-copy-upi" class="text-amber-400 hover:text-amber-300 transition-all font-bold px-1 py-0.5 flex items-center gap-1">
@@ -151,7 +150,7 @@
                     </div>
 
                     <div class="border-t border-white/5 pt-2">
-                        <p class="text-[10px] uppercase tracking-wider text-amber-400 font-bold mb-1">Phone Number</p>
+                        <p class="text-[10px] uppercase tracking-wider text-amber-400 font-bold mb-1">Phone Number (PhonePe/G-Pay)</p>
                         <div class="flex items-center justify-between bg-black/60 border border-white/5 rounded-lg px-2.5 py-1.5 text-xs font-mono text-gray-200">
                             <span id="phone-string-target">9652620229</span>
                             <button onclick="copyEngineString('phone-string-target', 'btn-copy-phone')" id="btn-copy-phone" class="text-amber-400 hover:text-amber-300 transition-all font-bold px-1 py-0.5 flex items-center gap-1">
@@ -608,12 +607,4 @@
     </script>
 </body>
 </html>
-   
     
-
-                                                         </a>`;
-                
-
-                                             
-           
-                                    
