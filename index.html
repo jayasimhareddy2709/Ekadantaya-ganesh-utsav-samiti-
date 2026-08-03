@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -76,7 +76,12 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-3xl mx-auto">
                 <!-- Idol Donor -->
                 <div class="bg-black/30 p-5 rounded-2xl border border-white/5 flex flex-col items-center text-center justify-between gap-4 group">
-                    <img src="45833.jpg" onerror="this.src='https://images.unsplash.com/photo-1609137144813-2d207ec4169c?w=150';" class="w-28 h-28 rounded-full object-cover border-2 border-amber-500/40" alt="Idol Donor">
+                    <a href="45833.jpg" target="_blank" class="block transition-transform hover:scale-105 active:scale-95 relative rounded-full p-0.5 border-2 border-amber-500/40 bg-black/20">
+                        <img src="45833.jpg" onerror="this.src='https://images.unsplash.com/photo-1609137144813-2d207ec4169c?w=150';" class="w-28 h-28 rounded-full object-cover" alt="Idol Donor">
+                        <div class="absolute inset-0 bg-black/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i class="fa-solid fa-expand text-white text-sm"></i>
+                        </div>
+                    </a>
                     <div>
                         <p class="text-[11px] text-amber-300 font-extrabold uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Ganesh Idol Donor</p>
                         <p class="font-extrabold text-white text-base mt-3">Chandra Sekhar Putta & Family</p>
@@ -369,7 +374,6 @@
 
     <!-- INTERFACE LOG ENGINE SCRIPT -->
     <script>
-        // Updated array with your 4 new custom cash donor blocks
         let donationsList = [
             { id: 1, name: "G.Gangadhar (UPI)", amount: 1800, receiptUrl: "receipt_gangadhar.jpg" },
             { id: 2, name: "Shiva (Cash)", amount: 500, receiptUrl: "receipt_shiva.jpg" },
@@ -383,7 +387,26 @@
             { id: 10, name: "Prabhakar (Cash)", amount: 500, receiptUrl: "receipt_prabhakar.jpg" },
             { id: 11, name: "Dowla (Cash)", amount: 50, receiptUrl: "receipt_dowla.jpg" },
             { id: 12, name: "Chenna reddy (Cash)", amount: 100, receiptUrl: "receipt_chennareddy.jpg" },
-            { id: 13, name: "Lakshmi kanth (Cash)", amount: 500, receiptUrl: "receipt_lakshmikanth.jpg" }
+            { id: 13, name: "Lakshmi kanth (Cash)", amount: 500, receiptUrl: "receipt_lakshmikanth.jpg" },
+            { id: 14, name: "Prudhvi raj (Cash)", amount: 200, receiptUrl: "receipt_prudhviraj.jpg" },
+            { id: 15, name: "Venkat rao (Cash)", amount: 200, receiptUrl: "receipt_venkatrao.jpg" },
+            { id: 16, name: "Vijaya (UPI)", amount: 516, receiptUrl: "receipt_vijaya.jpg" },
+            { id: 17, name: "Uma pathi (Cash)", amount: 200, receiptUrl: "receipt_umapathi.jpg" },
+            { id: 18, name: "Kathyayani (Cash)", amount: 516, receiptUrl: "receipt_kathyayani.jpg" },
+            { id: 19, name: "Rama Krishna Reddy (Cash)", amount: 300, receiptUrl: "receipt_ramakrishnareddy.jpg" },
+            { id: 20, name: "Mahesh (UPI)", amount: 150, receiptUrl: "receipt_mahesh.jpg" },
+            { id: 21, name: "Prasad (Cash)", amount: 500, receiptUrl: "receipt_prasad.jpg" },
+            { id: 22, name: "Sathish Kumar (Cash)", amount: 150, receiptUrl: "receipt_sathishkumar.jpg" },
+            { id: 23, name: "Venkat reddy (Cash)", amount: 100, receiptUrl: "receipt_venkatreddy.jpg" },
+            { id: 24, name: "Ram Mohan Reddy (Cash)", amount: 50, receiptUrl: "receipt_rammohanreddy.jpg" },
+            { id: 25, name: "Raja mohan (Cash)", amount: 100, receiptUrl: "receipt_rajamohan.jpg" },
+            { id: 26, name: "Prathap (Cash)", amount: 100, receiptUrl: "receipt_prathap.jpg" },
+            { id: 27, name: "Afreen (Cash)", amount: 20, receiptUrl: "receipt_afreen.jpg" },
+            { id: 28, name: "Harshitha (Cash)", amount: 50, receiptUrl: "receipt_harshitha.jpg" },
+            { id: 29, name: "Advith (Cash)", amount: 50, receiptUrl: "receipt_advith.jpg" },
+            { id: 30, name: "Raja Reddy (Cash)", amount: 50, receiptUrl: "receipt_rajareddy.jpg" },
+            { id: 31, name: "Lokeshwari (Cash)", amount: 100, receiptUrl: "receipt_lokeshwari.jpg" },
+            { id: 32, name: "Azhar (Cash)", amount: 50, receiptUrl: "receipt_azhar.jpg" }
         ];
         
         let expensesList = [];
@@ -528,5 +551,5 @@
     </script>
 </body>
 </html>
- 
-                                                
+                                           <i                 let nameHtml = item.name;
+              
