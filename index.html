@@ -1,4 +1,4 @@
-       <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -103,22 +103,30 @@
             </div>
         </section>
 
-        <!-- Devotee Support Payments QR Section -->
+        <!-- Devotee Support Payments QR Section (Updated to secure clipboard integration) -->
         <section class="royal-card p-6 rounded-3xl max-w-md mx-auto border-2 border-amber-400/40">
             <h2 class="text-xl font-black text-amber-400 mb-4 text-center tracking-wide gold-glow">
                 <i class="fa-solid fa-qrcode text-amber-500 mr-2"></i> Support The Utsav (Donations)
             </h2>
-            <p class="text-xs text-center text-gray-300 mb-4 font-medium">Scan this secure UPI QR code using any payment app, or **directly tap the QR code / button below** to pay instantly from this phone.</p>
+            <p class="text-xs text-center text-gray-300 mb-4 font-medium">Scan this QR code using another phone, or if you are using the same mobile device, **tap the copy button below** to copy the UPI ID directly.</p>
+            
             <div class="flex flex-col items-center gap-4">
-                <a href="upi://pay?pa=meena.peddakhadiri1@ybl" class="block bg-white p-4 rounded-2xl shadow-[0_0_20px_rgba(251,191,36,0.15)] border border-amber-300 max-w-[240px] transition-transform hover:scale-105 active:scale-95">
+                <div class="bg-white p-4 rounded-2xl shadow-[0_0_20px_rgba(251,191,36,0.15)] border border-amber-300 max-w-[240px]">
                     <img src="payment_qr.jpg" onerror="this.src='https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=300';" class="w-full h-auto object-contain rounded-lg" alt="UPI Payment QR">
-                </a>
-                
-                <a href="upi://pay?pa=meena.peddakhadiri1@ybl" class="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-black text-xs px-6 py-2.5 rounded-xl transition-all shadow-md active:scale-95 flex items-center gap-2">
-                    <i class="fa-solid fa-mobile-screen-button"></i> Tap Here to Pay via Mobile App
-                </a>
+                </div>
 
-                <span class="text-[10px] font-bold text-amber-400 bg-amber-500/10 px-4 py-1.5 rounded-full border border-amber-500/20 tracking-widest uppercase">Accepting All UPI Apps</span>
+                <!-- Interactive Clipboard Copy Container -->
+                <div class="w-full bg-black/40 rounded-xl p-3 border border-white/10 flex flex-col gap-2 text-center">
+                    <p class="text-[11px] uppercase tracking-wider text-amber-400 font-bold">Official Committee UPI ID</p>
+                    <div class="flex items-center justify-between bg-black/60 border border-white/5 rounded-lg px-3 py-2 text-xs font-mono text-gray-200">
+                        <span id="upi-string-target">meena.peddakhadiri1@ybl</span>
+                        <button onclick="copyUpiEngineString()" id="btn-copy-upi" class="text-amber-400 hover:text-amber-300 transition-all font-bold px-1 py-0.5 flex items-center gap-1">
+                            <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+                
+                <span class="text-[10px] font-bold text-amber-400 bg-amber-500/10 px-4 py-1.5 rounded-full border border-amber-500/20 tracking-widest uppercase text-center">Open your payment app & paste the ID to pay</span>
             </div>
         </section>
 
@@ -351,7 +359,6 @@
                     <div class="flex justify-between py-2"><span>🖼️ Flex Target Limit</span><span class="font-mono text-gray-800 font-bold">₹2,000</span></div>
                 </div>
 
-                <!-- SEPARATE SPECIFIC GATE FOR GANAPATI HOMAM REFERENCE -->
                 <div class="pt-2 border-t border-gray-200">
                     <h4 class="text-xs font-bold text-amber-700 flex items-center gap-1.5 mb-2.5">
                         <i class="fa-solid fa-om"></i> Ganapati Homam (Separate Pool Tracker)
@@ -421,6 +428,23 @@
             } else {
                 alert("Incorrect Pin / Code Word.");
             }
+        }
+
+        // Secure copy engine string functionality to prevent transaction flags
+        function copyUpiEngineString() {
+            const upiTargetText = document.getElementById("upi-string-target").innerText;
+            const btnCopy = document.getElementById("btn-copy-upi");
+            
+            navigator.clipboard.writeText(upiTargetText).then(() => {
+                btnCopy.innerHTML = `<i class="fa-solid fa-check text-emerald-400"></i> Copied!`;
+                btnCopy.classList.add("text-emerald-400");
+                setTimeout(() => {
+                    btnCopy.innerHTML = `<i class="fa-regular fa-copy"></i> Copy`;
+                    btnCopy.classList.remove("text-emerald-400");
+                }, 2000);
+            }).catch(err => {
+                alert("Failed to copy UPI ID. Please copy it manually: " + upiTargetText);
+            });
         }
 
         function calculateEngineBalances() {
@@ -551,5 +575,6 @@
     </script>
 </body>
 </html>
-                                           <i                 let nameHtml = item.name;
-              
+                             
+           
+                                    
