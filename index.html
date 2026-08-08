@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -250,7 +250,7 @@
                     <span class="text-orange-500">⚜</span> Festival Cash Counter
                 </h3>
                 
-                <!-- Target Goal Box (Updated to 40,000) -->
+                <!-- Target Goal Box -->
                 <div class="bg-orange-50/70 border border-orange-100 p-4 rounded-xl flex justify-between items-center">
                     <div>
                         <p class="text-[10px] uppercase font-bold text-orange-600/80 tracking-wider">Target Goal</p>
@@ -479,10 +479,11 @@
             { id: 64, name: "Rahamatullah", amount: 50, receiptUrl: "receipt_rahamatullah.jpg" },
             { id: 65, name: "Kullayappa", amount: 0, receiptUrl: "receipt_kullayappa.jpg" },
             
-            // Latest Cash Donors
+            // Recent Donors
             { id: 66, name: "Pramila (Cash)", amount: 200, receiptUrl: "receipt_pramila.jpg" },
             { id: 67, name: "Maheer yasheer (Cash)", amount: 100, receiptUrl: "receipt_maheeryasheer.jpg" },
-            { id: 68, name: "Gopi (Cash)", amount: 200, receiptUrl: "receipt_gopi.jpg" }
+            { id: 68, name: "Gopi (Cash)", amount: 200, receiptUrl: "receipt_gopi.jpg" },
+            { id: 69, name: "Seshu Madhav", amount: 5000, receiptUrl: "receipt_seshumadhav.jpg" }
         ];
         
         let expensesList = [];
@@ -521,7 +522,7 @@
             let sumSpent = expensesList.reduce((acc, current) => acc + current.amount, 0);
             let cashHand = sumCollected - sumSpent;
             
-            let targetGoal = 40000; // Target updated to 40,000
+            let targetGoal = 40000;
             let percentage = Math.min(Math.round((sumCollected / targetGoal) * 100), 100);
             let remainingGap = Math.max(targetGoal - sumCollected, 0);
 
@@ -645,3 +646,4 @@
 </body>
 </html>
                                     
+                            
